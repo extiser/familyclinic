@@ -1,8 +1,8 @@
 .directions {
 	&__wrapper {
 		display: flex;
-
-		padding: 36px 30px 52px;
+		max-width: 1200px;
+		padding: 36px 10px 52px;
 
 		align-items: flex-end;
 		@extend .wrapper;
