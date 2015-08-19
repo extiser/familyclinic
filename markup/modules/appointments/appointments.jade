@@ -5,24 +5,25 @@ mixin appointments()
 				span Записаться на прием
 
 			form(method="" action="").form
-				.form__column
-					label.form__label Ваше имя:
-					input(type="text" value="").form__element
+				.form__wrapper
+					.form__column
+						label.form__label Ваше имя:
+						input(type="text" value="").form__element
 
-				.form__column
-					label.form__label Ваш телефон:
-					input(type="text" value="").form__element
+					.form__column
+						label.form__label Ваш телефон:
+						input(type="text" value="").form__element
 
-				.form__column
-					label.form__label Врач (или отделение):
-					input(type="text" value="").form__element
+					.form__column
+						label.form__label Врач (или отделение):
+						input(type="text" value="").form__element
 
-				.form__column
-					label.form__label Дата записи:
-					input(type="text" value="").form__element
+					.form__column
+						label.form__label Дата записи:
+						input(type="text" value="").form__element
 
-				.form__row
-					input(type="submit" value="ЗАПИСАТЬСЯ НА ПРИЕМ К ВРАЧУ").form__submit
+					.form__row
+						input(type="submit" value="ЗАПИСАТЬСЯ НА ПРИЕМ К ВРАЧУ").form__submit
 
 			.appointments__banner
 				img(src="%=staticPrefix=%images/content/banner.jpg" alt="")

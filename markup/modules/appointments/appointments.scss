@@ -23,16 +23,21 @@
 }
 
 .form {
-	display: flex;
-
 	padding: 20px 40px 0;
 
 	background: rgba(0,0,0,.4);
+	&__wrapper {
+		margin: auto;
+		display: flex;
 
-	flex-wrap: wrap;
-	justify-content: space-between;
+		max-width: 1200px;
+
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 	&__row {
 		width: 100%;
+
 		text-align: center;
 	}
 	&__label {
