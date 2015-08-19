@@ -2,9 +2,9 @@
 	&__wrapper {
 		display: flex;
 
-		padding: 36px 10px 52px;
+		padding: 36px 30px 52px;
 
-		align-items: flex-end	;
+		align-items: flex-end;
 		@extend .wrapper;
 		flex-wrap: wrap;
 		justify-content: space-between;
