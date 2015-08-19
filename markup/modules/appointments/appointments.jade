@@ -21,7 +21,8 @@ mixin appointments()
 					label.form__label Дата записи:
 					input(type="text" value="").form__element
 
-				input(type="submit" value="ЗАПИСАТЬСЯ НА ПРИЕМ К ВРАЧУ").form__submit
+				.form__row
+					input(type="submit" value="ЗАПИСАТЬСЯ НА ПРИЕМ К ВРАЧУ").form__submit
 
 			.appointments__banner
 				img(src="%=staticPrefix=%images/content/banner.jpg" alt="")
