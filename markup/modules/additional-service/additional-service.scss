@@ -1,9 +1,8 @@
 .additional-service {
-	overflow-x: hidden;
-	overflow-y: visible;
+	overflow: hidden;
 
 	width: 100%;
-	height: auto;
+	height: 462px;
 	margin: auto;
 	&__wrapper {
 		padding: 0 10px;
@@ -18,33 +17,20 @@
 }
 
 .additional-service-list {
+	left: 0;
 	.slick-nav {
 		position: absolute;
 		z-index: 99;
-		top: 50px;
+		top: 0;
 		&--prev {
+			left: 577px;
+
 			@include bg($additional-service-slider-prev);
-			@media screen and (max-width: 1920px) {
-				left: 560px;
-			}
-			@media screen and (max-width: 1440px) {
-				left: 562px;
-			}
-			@media screen and (max-width: 1280px) {
-				left: 555px;
-			}
 		}
 		&--next {
+			right: 577px;
+
 			@include bg($additional-service-slider-next);
-			@media screen and (max-width: 1920px) {
-				right: 600px;
-			}
-			@media screen and (max-width: 1440px) {
-				right: 597px;
-			}
-			@media screen and (max-width: 1280px) {
-				right: 605px;
-			}
 		}
 	}
 	@media screen and (max-width: 1920px) {
@@ -60,7 +46,7 @@
 		width: 1920px;
 	}
 	@media screen and (max-width: 1280px) {
-		position: absolute;
+		position: relative;
 		left: -25%;
 
 		width: 1920px;
@@ -73,6 +59,9 @@
 	overflow: hidden;
 
 	min-height: 450px !important;
+
+	border-right: 3px solid transparent;
+	border-left: 3px solid transparent;
 	&__content {
 		position: absolute;
 		z-index: 99;
@@ -121,8 +110,8 @@
 			top: 0;
 			left: 0;
 
-			@include bg($check);
 			@include content;
+			@include bg($check);
 		}
 	}
 	&.slick-active {
