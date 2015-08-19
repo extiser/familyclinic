@@ -1,0 +1,72 @@
+.appointments {
+	min-height: 542px;
+
+	background: url(%=staticPrefixForCss=%general/appointments.jpg) no-repeat center center;
+	&__wrapper {
+		padding: 37px 0;
+
+		@extend .wrapper;
+	}
+	&__title {
+		margin-bottom: 37px;
+
+		color: #fff;
+
+		@extend .title;
+	}
+	&__banner {
+		width: 100%;
+		margin-top: 40px;
+
+		text-align: center;
+	}
+}
+
+.form {
+	display: flex;
+
+	padding: 20px 40px 0;
+
+	background: rgba(0,0,0,.4);
+
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__label {
+		display: block;
+
+		margin-bottom: 5px;
+
+		color: #fff;
+
+		font-size: em(14px);
+	}
+	&__element {
+		width: 242px;
+		height: 40px;
+		padding-left: 10px;
+
+		border: 0;
+		border-radius: 3px;
+		box-shadow: -1px 1px 0 $green;
+		&:focus {
+			outline: none;
+		}
+	}
+	&__submit {
+		width: 247px;
+		height: 41px;
+		margin: 23px auto;
+
+		text-transform: uppercase;
+
+		color: #fff;
+		border: 0;
+		background: $green;
+
+		font-size: em(14px);
+		line-height: 41px;
+		&:hover {
+			background: $green - #111;
+		}
+	}
+}

@@ -1,0 +1,104 @@
+.directions {
+	&__wrapper {
+		display: flex;
+
+		padding: 36px 10px 52px;
+
+		align-items: flex-end	;
+		@extend .wrapper;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__title {
+		margin-bottom: 32px;
+
+		@extend .title;
+	}
+	&__item {
+		position: relative;
+
+		text-decoration: none;
+		text-transform: uppercase;
+
+		color: #6d6e71;
+
+		font-size: em(14px);
+		span {
+			display: block;
+
+			width: 100%;
+			margin-bottom: 5px;
+			padding-bottom: 15px;
+
+			border-bottom: 1px solid $green;
+			&:before {
+				position: relative;
+
+				display: block;
+
+				margin: auto;
+
+				content: "";
+			}
+		}
+		&:hover {
+			color: $green;
+		}
+		&--general-medicine {
+			span {
+				&:before {
+					@include bg($general-medicine);
+				}
+			}
+		}
+		&--childrens-department {
+			span {
+				&:before {
+					@include bg($childrens-department);
+				}
+			}
+		}
+		&--aesthetic-medicine {
+			span {
+				&:before {
+					@include bg($aesthetic-medicine);
+				}
+			}
+		}
+		&--diagnostics {
+			span {
+				&:before {
+					@include bg($diagnostics);
+				}
+			}
+		}
+		&--prophylactic-examinations {
+			span {
+				&:before {
+					@include bg($prophylactic-examinations);
+				}
+			}
+		}
+		&--checkup-program {
+			span {
+				&:before {
+					@include bg($checkup-program);
+				}
+			}
+		}
+		&--management-pregnancy {
+			span {
+				&:before {
+					@include bg($management-pregnancy);
+				}
+			}
+		}
+		&--rehabilitation {
+			span {
+				&:before {
+					@include bg($rehabilitation);
+				}
+			}
+		}
+	}
+}

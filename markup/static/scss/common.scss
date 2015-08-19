@@ -1,0 +1,33 @@
+// Common styles of the project
+
+html,
+body {
+	font-family: "Calibri";
+}
+
+.wrapper {
+	width: 100%;
+	margin: auto;
+	box-sizing: border-box;
+	// @media screen and (max-width: 1024px) {
+	// width: 1007px;
+	// }
+	// @media screen and (max-width: 960px) {
+	// width: 100%;
+	// display: block;
+	// }
+}
+
+.main {
+	width: 100%;
+	max-width: 1920px;
+	margin: auto;
+	position: relative;
+	// @media screen and (max-width: 1024px) {
+	// width: 1007px;
+	// }
+	// @media screen and (max-width: 960px) {
+	// width: 100%;
+	// display: block;
+	// }
+}

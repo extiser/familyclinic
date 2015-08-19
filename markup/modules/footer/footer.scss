@@ -1,0 +1,34 @@
+.footer {
+	&__wrapper {
+		display: flex;
+
+		padding: 15px 10px;
+
+		align-items: center;
+		@extend .wrapper;
+		justify-content: space-between;
+	}
+	&__logo {
+		@include bg($logo);
+	}
+	&__contact {
+		text-align: center;
+		text-transform: uppercase;
+
+		color: #6d6e71;
+
+		font-size: em(14px);
+		line-height: 1;
+		p {
+			margin: 0;
+		}
+	}
+	&__created {
+		text-decoration: none;
+
+		color: $gray;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

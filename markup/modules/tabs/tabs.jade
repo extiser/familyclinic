@@ -1,0 +1,19 @@
+mixin tabs()
+	section.tabs
+		.tabs__wrapper
+
+			.tabs-header
+				.tabs-header__title.active НОВОСТИ
+				.tabs-header__title АКЦИИ
+				.tabs-header__title ПОЛЕЗНАЯ ИНФОРМАЦИЯ
+
+			.tabs-box
+				.tabs-box__item.active
+					.news
+						- for (var i = 0; i < 10; i++) {
+						+item-block()
+						- }
+				.tabs-box__item
+					.news 2
+				.tabs-box__item
+					.news 3

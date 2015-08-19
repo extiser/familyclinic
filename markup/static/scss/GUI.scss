@@ -1,0 +1,18 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+
+.title {
+	width: 100%;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: $gray;
+
+	font-family: "ReformaGroteskDemiC";
+	font-size: em(44px);
+	span {
+		border-bottom: 1px solid $green;
+	}
+}

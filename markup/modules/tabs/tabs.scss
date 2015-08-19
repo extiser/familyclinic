@@ -1,0 +1,68 @@
+.tabs {
+	&__wrapper {
+		padding: 37px 10px;
+
+		@extend .wrapper;
+	}
+}
+
+.tabs-header {
+	margin-bottom: 42px;
+
+	text-align: center;
+	&__title {
+		display: inline;
+
+		margin: 0 15px;
+
+		font-size: em(30px);
+
+		@extend .title;
+		&:hover,
+		&.active {
+			cursor: pointer;
+
+			color: $green;
+			border-bottom: 1px solid $gray;
+		}
+	}
+}
+
+.tabs-box {
+	&__item {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+}
+
+.news {
+	width: 1010px;
+	margin: auto;
+	.item-block {
+		margin: 0 11px;
+	}
+	.slick-nav {
+		position: absolute;
+		z-index: 99;
+		top: 100px;
+		&--prev {
+			left: -60px;
+
+			@include bg($tabs-slider-prev);
+			&:hover {
+				@include bg($tabs-slider-prev-active);
+			}
+		}
+		&--next {
+			right: -60px;
+
+			@include bg($tabs-slider-next);
+			&:hover {
+				@include bg($tabs-slider-next-active);
+			}
+		}
+	}
+}

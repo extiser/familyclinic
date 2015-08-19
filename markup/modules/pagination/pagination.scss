@@ -1,0 +1,52 @@
+.pagination {
+	@media screen and (max-width: 960px) {
+		margin: auto;
+
+		text-align: center;
+	}
+	&__item {
+		margin-right: -1px;
+		padding: 5px 10px;
+
+		text-decoration: none;
+
+		color: #333;
+		color: #2d3577;
+		border: 1px solid #e8e8e8;
+
+		font-size: em(14px);
+		line-height: em(21px, 14px);
+		&:hover,
+		&.active {
+			color: #000;
+			background-color: #f8e1e7;
+		}
+		&--prev,
+		&--next {
+			position: relative;
+
+			width: 17px;
+			height: 14px;
+			padding: 5px 17px;
+			&:before {
+				top: 7px;
+
+				@include content;
+			}
+		}
+		&--prev {
+			&:before {
+				left: 8px;
+
+				@include bg($pagination-prev);
+			}
+		}
+		&--next {
+			&:before {
+				left: 10px;
+
+				@include bg($pagination-next);
+			}
+		}
+	}
+}

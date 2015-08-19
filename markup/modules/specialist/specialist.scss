@@ -1,0 +1,91 @@
+.specialist {
+	position: relative;
+
+	min-height: 522px;
+
+	background: url(%=staticPrefixForCss=%general/specialist-bg.jpg) no-repeat center center;
+	&__wrapper {
+		padding: 40px 10px 48px;
+
+		@extend .wrapper;
+	}
+	&__title {
+		margin-bottom: 45px;
+
+		color: #fff;
+
+		@extend .title;
+	}
+	&__btn {
+		display: block;
+
+		width: 247px;
+		height: 41px;
+		margin: 48px auto 0 ;
+
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		color: #fff;
+		background: $green;
+
+		font-size: em(14px);
+		line-height: 41px;
+		&:hover {
+			background: $green - #111;
+		}
+	}
+}
+
+.specialist-list {
+	margin: auto;
+	.slick-nav {
+		position: absolute;
+		z-index: 99;
+		top: 70px;
+		&--prev {
+			left: 0;
+
+			@include bg($specialist-slider-prev);
+		}
+		&--next {
+			right: 0;
+
+			@include bg($specialist-slider-next);
+		}
+	}
+}
+
+.specialist-list-item {
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+		.specialist-list-item__img {
+			border-color: $gray;
+		}
+		.specialist-list-item__name {
+			text-decoration: underline;
+		}
+	}
+	&__img {
+		margin: auto;
+		margin-bottom: 10px;
+
+		border: 4px solid $green;
+		border-radius: 50%;
+	}
+	&__name {
+		display: block;
+
+		color: $gray;
+
+		font-size: em(14px);
+	}
+	&__position {
+		color: $green;
+
+		font-size: em(12px);
+	}
+}

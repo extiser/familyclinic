@@ -1,0 +1,99 @@
+.why {
+	&__wrapper {
+		display: flex;
+
+		padding: 40px 10px 35px;
+
+		align-items: flex-start;
+		@extend .wrapper;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__title {
+		margin-bottom: 40px;
+
+		@extend .title;
+	}
+}
+
+.why-item {
+	position: relative;
+
+	max-width: 300px;
+	margin: 0 45px;
+	padding-top: 170px;
+	&__element {
+		display: flex;
+
+		width: 100%;
+		margin: auto;
+
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	&__count {
+		padding-right: 3px;
+
+		color: $green;
+
+		font-family: "ReformaGroteskDemiC";
+		font-size: em(66px);
+		line-height: 0;
+	}
+	&__description {
+		color: $gray;
+
+		font-family: "ReformaGroteskDemiC";
+		font-size: em(30px);
+		line-height: .8;
+	}
+	&__text {
+		margin-top: 15px;
+
+		text-align: center;
+
+		color: #9d9d9d;
+
+		font-size: em(14px);
+	}
+	&:before {
+		top: 0;
+		right: 0;
+		left: 0;
+
+		margin: auto;
+
+		@include content;
+	}
+	&--services {
+		.why-item {
+			&__element {
+				width: 146px;
+			}
+		}
+		&:before {
+			@include bg($services);
+		}
+	}
+	&--doctor {
+		.why-item {
+			&__element {
+				width: 265px;
+			}
+		}
+		&:before {
+			@include bg($doctor);
+		}
+	}
+	&--choice {
+		.why-item {
+			&__element {
+				width: 160px;
+			}
+		}
+		&:before {
+			@include bg($choice);
+		}
+	}
+}

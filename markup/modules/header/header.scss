@@ -1,0 +1,27 @@
+.header {
+	&__wrapper {
+		display: flex;
+
+		padding: 10px;
+
+		align-items: center;
+		@extend .wrapper;
+		justify-content: space-between;
+	}
+	&__logo {
+		display: block;
+
+		@include bg($logo);
+	}
+	&__call {
+		padding-bottom: 10px;
+
+		text-transform: uppercase;
+
+		color: $green;
+
+		font-size: em(14px);
+		font-weight: 700;
+		line-height: 1;
+	}
+}
