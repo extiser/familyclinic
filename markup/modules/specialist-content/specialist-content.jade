@@ -1,0 +1,13 @@
+mixin specialist-content()
+	section.specialist-content
+		.specialist-content__wrapper
+			h1 НАШИ СПЕЦИАЛИСТЫ
+
+			+breadcrumbs()
+
+			- for (var i = 1; i < 5; i++) {
+			.specialist-content-item
+				img(src="%=staticPrefix=%images/content/specialist-#{i}.jpg" alt="").specialist-content-item__img
+				.specialist-content-item__name Джолдасова Гульмира Тлеубердиевна
+				.specialist-content-item__position Врач терапевт
+			- }

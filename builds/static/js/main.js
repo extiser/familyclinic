@@ -35,6 +35,11 @@ jQuery(document).ready(function ($) {
 });
 
 jQuery(document).ready(function ($) {
+    $('.prices-content-item').click(function () {
+        $(this).toggleClass('active').siblings().removeClass('active');
+    });
+});
+jQuery(document).ready(function ($) {
     $('.search__mobile').click(function () {
         $(this).toggleClass('active');
         $('.search__wrapper').toggleClass('active');
