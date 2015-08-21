@@ -1,0 +1,18 @@
+mixin sidebar-right(page)
+	- var modiffer = ''
+	- if (page == 'news') modiffer = 'sidebar-right--news'
+	aside.sidebar-right(class="#{modiffer}")
+		- if (page == 'programs') {
+		.sidebar-right__title Программы
+		.sidebar-right__list
+			- for(var i = 0; i < 4; i++) {
+			a(href="#" title="").sidebar-right__item НАЗВАНИЕ РАЗДЕЛА
+			- }
+		- }
+		- if (page == 'news') {
+		.sidebar-right__actions
+			.sidebar-right__title АКЦИИ
+			- for(var i = 0; i < 4; i++) {
+			+item-block()
+			- }
+		- }

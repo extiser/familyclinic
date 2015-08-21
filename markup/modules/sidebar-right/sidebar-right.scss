@@ -1,0 +1,34 @@
+.sidebar-right {
+	float: right;
+
+	width: 195px;
+	&--news {
+		width: 230px;
+	}
+	&__title {
+		margin-top: 10px;
+
+		text-transform: uppercase;
+
+		color: $green;
+
+		font-size: em(24px);
+		font-weight: 700;
+	}
+	&__item {
+		display: block;
+
+		margin-bottom: 10px;
+
+		text-align: center;
+
+		line-height: 41px;
+
+		@extend .green-btn;
+	}
+	&__actions {
+		.item-block {
+			margin-bottom: 15px;
+		}
+	}
+}

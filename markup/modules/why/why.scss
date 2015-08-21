@@ -1,6 +1,7 @@
 .why {
 	&__wrapper {
 		display: flex;
+
 		max-width: 1200px;
 		padding: 40px 10px 35px;
 
@@ -13,6 +14,22 @@
 		margin-bottom: 40px;
 
 		@extend .title;
+	}
+	&__buttons {
+		width: 100%;
+		padding-top: 30px;
+
+		text-align: center;
+	}
+	&__button {
+		display: inline-block;
+
+		margin: 0 15px;
+		padding: 0 25px;
+
+		line-height: 41px;
+
+		@extend .green-btn;
 	}
 }
 
