@@ -408,10 +408,6 @@ html, body {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -802,9 +798,10 @@ html, body {
 
 .inside-top {
   width: 100%;
-  max-width: 1920px;
-  height: 380px;
-  background: url(../images/general/inside-top.jpg) no-repeat center center; }
+  max-width: 1920px; }
+  .inside-top img {
+    width: 100%;
+    height: auto; }
 
 .item-block {
   position: relative;
