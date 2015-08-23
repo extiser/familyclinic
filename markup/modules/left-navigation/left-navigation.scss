@@ -1,0 +1,27 @@
+.left-navigation {
+	&__title {
+		@extend .title-inside;
+	}
+	&__list {
+		margin-top: 15px;
+	}
+	&__item {
+		position: relative;
+		left: 13px;
+
+		display: block;
+
+		color: #6d6e71;
+
+		font-size: em(16px);
+		&:before {
+			position: absolute;
+			left: -13px;
+
+			content: "»";
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

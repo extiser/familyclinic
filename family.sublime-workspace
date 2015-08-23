@@ -4,16 +4,112 @@
 		"selected_items":
 		[
 			[
-				"ma",
-				"max-height"
-			],
-			[
 				"marign",
 				"margin-top"
 			],
 			[
+				"margin",
+				"margin-top"
+			],
+			[
 				"pad",
-				"padding-left"
+				"padding-bottom"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"spe",
+				"specialist-content-item"
+			],
+			[
+				"out",
+				"outline-color"
+			],
+			[
+				"border-",
+				"border-box"
+			],
+			[
+				"f",
+				"form__element"
+			],
+			[
+				"sin",
+				"single-page-content-form"
+			],
+			[
+				"mari",
+				"margin-bottom"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"magin",
+				"margin-bottom"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"wh",
+				"why__buttons"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"margn",
+				"margin-right"
+			],
+			[
+				"border-bo",
+				"border-bottom"
+			],
+			[
+				"tab",
+				"tabs-box"
+			],
+			[
+				"ad",
+				"additional-service-list"
+			],
+			[
+				"additional-service-li",
+				"additional-service-list-item"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"font",
+				"font-size"
 			],
 			[
 				"tra",
@@ -21,10 +117,6 @@
 			],
 			[
 				"margi",
-				"margin"
-			],
-			[
-				"margn",
 				"margin"
 			],
 			[
@@ -36,20 +128,8 @@
 				"function"
 			],
 			[
-				"margin",
-				"margin"
-			],
-			[
 				"com",
 				"comments-native-item"
-			],
-			[
-				"fon",
-				"font-size"
-			],
-			[
-				"te",
-				"text-align"
 			],
 			[
 				"marg",
@@ -128,10 +208,6 @@
 				"outline"
 			],
 			[
-				"font",
-				"font-family"
-			],
-			[
 				"con",
 				"contact-content"
 			],
@@ -160,20 +236,12 @@
 				"top-menu-inside__title"
 			],
 			[
-				"border-bo",
-				"border-bottom-color"
-			],
-			[
 				"border-co",
 				"border-color"
 			],
 			[
 				"border-c",
 				"border-collapse"
-			],
-			[
-				"in",
-				"inline-block"
 			],
 			[
 				"le",
@@ -214,10 +282,6 @@
 			[
 				"me",
 				"menu__item"
-			],
-			[
-				"border",
-				"border-box"
 			],
 			[
 				"bore",
@@ -328,10 +392,6 @@
 				"authors"
 			],
 			[
-				"for",
-				"form__submit"
-			],
-			[
 				"fo",
 				"form"
 			],
@@ -408,14 +468,6 @@
 				"css	.css() - single"
 			],
 			[
-				"ad",
-				"address-list-item"
-			],
-			[
-				"backgr",
-				"background-position"
-			],
-			[
 				"scro",
 				"scrollTop	.scrollTop()"
 			],
@@ -424,16 +476,8 @@
 				"scrollTop	.scrollTop()"
 			],
 			[
-				"min",
-				"min-height"
-			],
-			[
 				"mrg",
 				"margin-right"
-			],
-			[
-				"border-",
-				"border-style"
 			],
 			[
 				"cal",
@@ -470,50 +514,6 @@
 			[
 				"border-r",
 				"border-right"
-			],
-			[
-				"inlin",
-				"inline-block"
-			],
-			[
-				"border-oc",
-				"border-color"
-			],
-			[
-				"th",
-				"thumbnail"
-			],
-			[
-				"chi",
-				"childNodes"
-			],
-			[
-				"gal",
-				"galleryElement"
-			],
-			[
-				"подаро",
-				"подарков"
-			],
-			[
-				"df",
-				"df-link-color"
-			],
-			[
-				"df-",
-				"df-link-solid-color"
-			],
-			[
-				"no",
-				"no-repeat"
-			],
-			[
-				"ser",
-				"service"
-			],
-			[
-				"text-",
-				"text-align"
 			]
 		]
 	},
@@ -589,8 +589,81 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/extiser/git/familyclinic/markup",
+		"/Users/extiser/git/familyclinic/markup/modules",
+		"/Users/extiser/git/familyclinic/markup/pages",
+		"/Users/extiser/git/familyclinic/markup/static",
+		"/Users/extiser/git/familyclinic/markup/static/scss"
+	],
 	"file_history":
 	[
+		"/Users/extiser/git/familyclinic/markup/modules/about-content/about-content.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/prices-content/prices-content.js",
+		"/Users/extiser/git/familyclinic/markup/pages/prices.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/prices-content/prices-content.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/prices-content/prices-content.scss",
+		"/Users/extiser/git/familyclinic/markup/pages/specialist.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/specialist-content/specialist-content.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/specialist-content/specialist-content.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/include/include.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/about-content/about-content.jade",
+		"/Users/extiser/git/familyclinic/markup/pages/news.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/news-content/news-content.jade",
+		"/Users/extiser/git/familyclinic/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/news-content/news-content.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/sidebar-right/sidebar-right.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/sidebar-right/sidebar-right.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/program-inside-content/program-inside-content.jade",
+		"/Users/extiser/git/familyclinic/markup/pages/program-inside.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/sidebar-left/sidebar.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/sidebar-left/sidebar-left.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/program-content/program-content.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/left-navigation/data/data.js",
+		"/Users/extiser/git/familyclinic/markup/modules/sidebar-left/sidebar-left.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/breadcrumbs/breadcrumbs.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/footer/footer.jade",
+		"/Users/extiser/git/familyclinic/markup/pages/index.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/footer/footer.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/left-navigation/left-navigation.jade",
+		"/Users/extiser/git/!temp/temp.txt",
+		"/Users/extiser/git/familyclinic/markup/modules/left-navigation/left-navigation.scss",
+		"/Users/extiser/git/familyclinic/markup/pages/about.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/inside-top/inside-top.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/inside-top/inside-top.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/why/why.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/why/why.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/additional-service/additional-service.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/appointments/appointments.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/appointments/appointments.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/header/header.scss",
+		"/Users/extiser/git/familyclinic/markup/static/scss/common.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/directions/directions.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/additional-service/additional-service.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/map/map.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/map/map.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/map.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/tabs/tabs.js",
+		"/Users/extiser/git/familyclinic/markup/modules/tabs/tabs.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/tabs/tabs.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/item-block/item-block.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/item-block/item-block.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/additional-service/additional-service.js",
+		"/Users/extiser/git/familyclinic/markup/modules/specialist/specialist.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/specialist/specialist.js",
+		"/Users/extiser/git/familyclinic/markup/modules/specialist/specialist.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/directions/directions.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/slider/slider.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/slider/slider.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/slider/slider.js",
+		"/Users/extiser/git/familyclinic/markup/static/scss/fonts.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/search/search.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/search/search.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/top-menu/top-menu.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/header/header.jade",
+		"/Users/extiser/git/familyclinic/markup/modules/top-menu/top-menu.scss",
+		"/Users/extiser/git/familyclinic/markup/static/scss/vars.scss",
 		"/Users/extiser/git/familyclinic/index.html",
 		"/Users/extiser/git/familyclinic/css/style.css",
 		"/Users/extiser/git/familyclinic/js/script.js",
@@ -653,72 +726,7 @@
 		"/Users/extiser/git/sovets-2015/markup/modules/header/header.jade",
 		"/Users/extiser/git/sovets-2015/markup/static/scss/vars.scss",
 		"/Users/extiser/git/amkodor/markup/pages/contact.jade",
-		"/Users/extiser/git/amkodor/markup/modules/contact-content/contact-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/contact-content/contact-content.scss",
-		"/Users/extiser/git/amkodor/markup/modules/include/include.jade",
-		"/Users/extiser/git/amkodor/markup/modules/structure-content/structure-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/structure-content/structure-content.scss",
-		"/Users/extiser/git/amkodor/markup/pages/history.jade",
-		"/Users/extiser/git/amkodor/markup/modules/page-content/page-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/page-content/page-content.scss",
-		"/Users/extiser/git/amkodor/markup/modules/history-content/history-content.jade",
-		"/Users/extiser/git/amkodor/markup/pages/structure.jade",
-		"/Users/extiser/git/amkodor/markup/modules/main-block/main-block.scss",
-		"/Users/extiser/git/amkodor/markup/static/scss/common.scss",
-		"/Users/extiser/git/amkodor/markup/modules/slider/slider.js",
-		"/Users/extiser/git/amkodor/markup/pages/index.jade",
-		"/Users/extiser/git/amkodor/markup/modules/slider/slider.jade",
-		"/Users/extiser/git/amkodor/markup/modules/slider/slider.scss",
-		"/Users/extiser/git/amkodor/markup/modules/head/head.jade",
-		"/Users/extiser/git/amkodor/markup/modules/footer/footer.jade",
-		"/Users/extiser/git/gsb/markup/modules/footer/footer.jade",
-		"/Users/extiser/git/amkodor/markup/modules/header/header.scss",
-		"/Users/extiser/git/amkodor/markup/modules/news-line/news-line.scss",
-		"/Users/extiser/git/amkodor/markup/modules/news-line/news-line.jade",
-		"/Users/extiser/git/amkodor/markup/modules/top-menu/top-menu.jade",
-		"/Users/extiser/git/amkodor/markup/modules/top-menu/top-menu.scss",
-		"/Users/extiser/git/amkodor/markup/modules/top-menu/top-menu.js",
-		"/Users/extiser/git/amkodor/markup/modules/header/header.jade",
-		"/Users/extiser/git/amkodor/markup/modules/!include/include.jade",
-		"/Users/extiser/git/amkodor/markup/static/scss/vars.scss",
-		"/Users/extiser/git/amkodor/markup/static/scss/mixins.scss",
-		"/Users/extiser/git/amkodor/markup/static/scss/fonts.scss",
-		"/Users/extiser/git/vrachmedic/markup/modules/comments/comments.scss",
-		"/Users/extiser/git/vrachmedic/markup/modules/comments/comments.jade",
-		"/Users/extiser/git/vrachmedic/markup/pages/single.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/includes/includes.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/similar-articles/similar-articles.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/similar-articles/similar-articles.scss",
-		"/Users/extiser/git/vrachmedic/markup/modules/single-content/single-content.scss",
-		"/Users/extiser/git/vrachmedic/markup/modules/social/social.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/single-content/single-content.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/category-content/category-content.scss",
-		"/Users/extiser/git/vrachmedic/markup/static/scss/GUI.scss",
-		"/Users/extiser/git/vrachmedic/markup/pages/category.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/category-content/category-content.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/pagination/pagination.scss",
-		"/Users/extiser/git/vrachmedic/markup/static/scss/vars.scss",
-		"/Users/extiser/git/vrachmedic/markup/modules/breadcrumbs/breadcrumbs.scss",
-		"/Users/extiser/git/vrachmedic/markup/modules/article-row/article-row.scss",
-		"/Users/extiser/git/vrachmedic/markup/modules/last-articles/last-articles.scss",
-		"/Users/extiser/git/vrachmedic/markup/static/scss/common.scss",
-		"/Users/extiser/git/vrachmedic/markup/pages/index.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/footer/footer.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/footer/footer.scss",
-		"/Users/extiser/git/vrachmedic/markup/modules/article-row/article-row.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/article-block/article-block.scss",
-		"/Users/extiser/git/vrachmedic/markup/modules/last-articles/last-articles.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/popular-articles/popular-articles.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/popular-articles/popular-articles.scss",
-		"/Users/extiser/git/vrachmedic/markup/modules/article-block/article-block.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/menu/menu.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/menu/menu.scss",
-		"/Users/extiser/git/vrachmedic/markup/modules/search/search.scss",
-		"/Users/extiser/git/vrachmedic/markup/modules/search/search.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/header/header.jade",
-		"/Users/extiser/git/vrachmedic/markup/modules/header/header.scss",
-		"/Users/extiser/Work/!Work Files/swipebox-master/index.html",
-		"/Users/extiser/git/gsb/markup/modules/object-content/object-content.scss"
+		"/Users/extiser/git/amkodor/markup/modules/contact-content/contact-content.jade"
 	],
 	"find":
 	{

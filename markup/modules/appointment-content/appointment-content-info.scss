@@ -1,0 +1,21 @@
+.appointment-content-info {
+	padding-top: 15px;
+
+	border-top: 2px solid #b2b2b2;
+	&__cost {
+		text-transform: uppercase;
+
+		color: $green;
+
+		font-size: em(30px);
+	}
+	&__btn {
+		float: right;
+
+		padding: 0 25px;
+
+		line-height: 41px;
+
+		@extend .green-btn;
+	}
+}

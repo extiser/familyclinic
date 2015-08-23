@@ -1,5 +1,6 @@
-mixin footer(data)
-	footer.footer
+mixin footer(modiffer)
+	- if (modiffer == undefined) modiffer = ''
+	footer.footer(class="#{modiffer}")
 		.footer__wrapper
 			.footer__logo
 

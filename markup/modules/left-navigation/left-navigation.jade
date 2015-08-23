@@ -1,0 +1,8 @@
+mixin left-navigation(data)
+	.left-navigation
+		.left-navigation__title НАВИГАЦИЯ
+
+		.left-navigation__list
+			- data.forEach(function (item) {
+			a(href="#" title="").left-navigation__item= item
+			- })

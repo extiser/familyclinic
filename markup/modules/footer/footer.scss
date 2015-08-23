@@ -1,4 +1,8 @@
 .footer {
+	border-top: 2px solid #b2b2b2;
+	&.home {
+		border-top: 0;
+	}
 	&__wrapper {
 		display: flex;
 

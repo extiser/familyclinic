@@ -1,0 +1,76 @@
+.single-page-content-form {
+	margin-top: 20px;
+	padding-top: 20px;
+
+	border-top: 2px solid #b2b2b2;
+	&__link {
+		display: inline-block;
+
+		padding: 0 25px;
+
+		line-height: 41px;
+
+		@extend .green-btn;
+	}
+}
+
+.single-page-content-form-block {
+	float: right;
+
+	box-sizing: border-box;
+	width: 476px;
+	padding: 12px;
+
+	border: 1px solid #e0e8ef;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 0 0 7px #e0e8ef;
+	&__row {
+		position: relative;
+		&:before {
+			top: 7px;
+			left: 10px;
+
+			@include content;
+		}
+		&--name {
+			&:before {
+				@include bg($form-name);
+			}
+		}
+		&--mail {
+			&:before {
+				@include bg($form-mail);
+			}
+		}
+	}
+	&__element {
+		box-sizing: border-box;
+		width: 100%;
+		height: 36px;
+		margin-bottom: 10px;
+		padding-left: 53px;
+
+		border: 1px solid #c4c4c4;
+		border-radius: 5px;
+
+		font-size: em(14px);
+		&:focus {
+			outline-color: #f8ad24;
+		}
+		&--textarea {
+			height: 150px;
+			padding-left: 10px;
+		}
+	}
+	&__submit {
+		float: right;
+
+		width: 173px;
+		height: 41px;
+
+		border: 0;
+
+		@extend .green-btn;
+	}
+}

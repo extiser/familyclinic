@@ -1,0 +1,47 @@
+.specialist-content {
+	&__wrapper {
+		position: relative;
+
+		display: flex;
+
+		max-width: 1200px;
+
+		align-items: flex-start;
+		@extend .wrapper;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	h1 {
+		margin: 0;
+
+		@extend .title-inside;
+	}
+}
+
+.specialist-content-item {
+	width: 264px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	text-align: center;
+	&__img {
+		display: block;
+
+		margin: auto;
+		margin-bottom: 10px;
+
+		border: 2px solid $green;
+		border-radius: 50%;
+	}
+	&__name {
+		color: $gray;
+
+		font-size: em(14px);
+		font-weight: 700;
+	}
+	&__position {
+		color: $green;
+
+		font-size: em(16px);
+	}
+}
