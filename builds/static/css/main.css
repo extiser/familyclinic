@@ -340,13 +340,13 @@ blockquote {
   font-size: 1.5em;
   font-weight: 700; }
 
-.green-btn, .single-page-content-form__link, .single-page-content-form-block__submit, .sidebar-right__item, .why__button {
+.green-btn, .appointment-content-info__btn, .single-page-content-form__link, .single-page-content-form-block__submit, .sidebar-right__item, .why__button {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   background: #34b44a;
   font-size: 0.875em; }
-  .green-btn:hover, .single-page-content-form__link:hover, .single-page-content-form-block__submit:hover, .sidebar-right__item:hover, .why__button:hover {
+  .green-btn:hover, .appointment-content-info__btn:hover, .single-page-content-form__link:hover, .single-page-content-form-block__submit:hover, .sidebar-right__item:hover, .why__button:hover {
     background: #23a339; }
 
 .paragraph, .single-page-content__date, .single-page-content p, .single-page-content ul, .single-page-content ol, .single-page-content strong {
@@ -538,6 +538,18 @@ html, body {
       color: #34b44a; }
     .additional-service-list-item.slick-center .additional-service-list-item__inside {
       display: block; }
+
+.appointment-content-info {
+  padding-top: 15px;
+  border-top: 2px solid #b2b2b2; }
+  .appointment-content-info__cost {
+    text-transform: uppercase;
+    color: #34b44a;
+    font-size: 1.875em; }
+  .appointment-content-info__btn {
+    float: right;
+    padding: 0 25px;
+    line-height: 41px; }
 
 .appointments {
   min-height: 542px;
@@ -847,11 +859,6 @@ html, body {
   .left-navigation__item:hover {
     text-decoration: none; }
 
-.map {
-  overflow: hidden;
-  width: 100%;
-  max-width: 1920px; }
-
 .single-page-content-form {
   margin-top: 20px;
   padding-top: 20px;
@@ -954,6 +961,11 @@ html, body {
     height: 14px;
     background-size: 526px, 362px;
     background-repeat: no-repeat; }
+
+.map {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1920px; }
 
 .prices-content__wrapper {
   position: relative;
