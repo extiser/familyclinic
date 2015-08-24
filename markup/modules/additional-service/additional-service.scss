@@ -22,15 +22,29 @@
 		position: absolute;
 		z-index: 99;
 		top: 0;
-		&--prev {
-			left: 577px;
 
-			@include bg($additional-service-slider-prev);
+		width: 30%;
+		height: 100%;
+		&:before {
+			top: 0;
+			right: 0;
+
+			@include content;
+		}
+		&--prev {
+			&:before {
+				left: 577px;
+
+				@include bg($additional-service-slider-prev);
+			}
 		}
 		&--next {
-			right: 577px;
+			right: 0;
+			&:before {
+				right: 577px;
 
-			@include bg($additional-service-slider-next);
+				@include bg($additional-service-slider-next);
+			}
 		}
 	}
 	@media screen and (max-width: 1920px) {
@@ -68,7 +82,7 @@
 
 		box-sizing: border-box;
 		width: 100%;
-		padding: 30px 38px;
+		padding: 20px 35px;
 	}
 	&__inside {
 		display: none;
@@ -85,12 +99,12 @@
 		color: #fff;
 
 		font-family: "ReformaGroteskDemiC";
-		font-size: em(44px);
+		font-size: em(39px);
 	}
 	&__text {
 		color: #fff;
 
-		font-size: em(16px);
+		font-size: em(14px);
 	}
 	&__container {
 		@include nl;
@@ -98,7 +112,7 @@
 	&__list {
 		position: relative;
 
-		margin-bottom: 10px;
+		margin-bottom: 7px;
 		padding-top: 3px;
 		padding-left: 31px;
 
@@ -110,9 +124,19 @@
 			top: 0;
 			left: 0;
 
-			@include content;
 			@include bg($check);
+			@include content;
 		}
+	}
+	&__btn {
+		display: inline-block;
+
+		margin-top: 10px;
+		padding: 0 25px;
+
+		line-height: 35px;
+
+		@extend .green-btn;
 	}
 	&.slick-active {
 		.additional-service-list-item__title {
