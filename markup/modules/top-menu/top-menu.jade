@@ -2,10 +2,42 @@ mixin top-menu()
 	nav.top-menu
 		.top-menu__mobile
 		.top-menu__list
-			a(href="#" title="").top-menu__item Главная
-			a(href="#" title="").top-menu__item О Famaly Clinic
-			a(href="#" title="").top-menu__item Направления
-			a(href="#" title="").top-menu__item Специалисты
-			a(href="#" title="").top-menu__item Полезная информация
-			a(href="#" title="").top-menu__item Цены
-			a(href="#" title="").top-menu__item Контакты
+			.top-menu__item
+				a(href="/" title="") Главная
+			.top-menu__item
+				a(href="/about.html" title="") О Family Clinic
+			.top-menu__item
+				a(href="#" title="") Направления
+				.top-menu-inside
+					a(href="#" title="").directions__item.directions__item--general-medicine 
+						span
+						| Общая медицина 
+					a(href="#" title="").directions__item.directions__item--childrens-department  
+						span
+						| Детское отделение 
+					a(href="#" title="").directions__item.directions__item--aesthetic-medicine  
+						span
+						| эстетическая медицина
+					a(href="#" title="").directions__item.directions__item--diagnostics  
+						span
+						| диагностика
+					a(href="#" title="").directions__item.directions__item--prophylactic-examinations  
+						span
+						| профосмотры 
+					a(href="#" title="").directions__item.directions__item--checkup-program  
+						span
+						| CHECK-UP ПРОГРАММЫ 
+					a(href="#" title="").directions__item.directions__item--management-pregnancy  
+						span
+						| ведение беременности 
+					a(href="#" title="").directions__item.directions__item--rehabilitation  
+						span
+						| реабилитация 
+			.top-menu__item
+				a(href="/specialist.html" title="") Специалисты
+			.top-menu__item
+				a(href="#" title="") Полезная информация
+			.top-menu__item
+				a(href="/prices.html" title="") Цены
+			.top-menu__item
+				a(href="#" title="") Контакты

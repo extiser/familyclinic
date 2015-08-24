@@ -49,7 +49,7 @@
 
 	color: #6d6e71;
 
-	font-size: em(14px);
+	font-size: em(14px, 16px);
 }
 
 .single-page-content {
@@ -89,10 +89,18 @@
 	ol,
 	strong {
 		@extend .paragraph;
+		strong {
+			font-size: em(14px, 14px);
+		}
 	}
 }
 
 .sidebar-left {
 	width: 255px;
 	margin-right: 41px;
+	&--float {
+		float: left;
+
+		margin-right: 25px;
+	}
 }
