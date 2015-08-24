@@ -1,12 +1,14 @@
-.page-content {
-	&__wrapper {
-		display: flex;
+.single-page-about {
+	&__img {
+		margin-right: 40px;
+	}
+	&__btn {
+		display: inline-block;
 
-		max-width: 1200px;
-		padding: 10px;
+		padding: 0 25px;
 
-		align-items: flex-start;
-		@extend .wrapper;
-		justify-content: space-between;
+		line-height: 41px;
+
+		@extend .green-btn;
 	}
 }

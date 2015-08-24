@@ -35,6 +35,16 @@ jQuery(document).ready(function ($) {
 });
 
 jQuery(document).ready(function ($) {
+    $('a[data-click="modal"]').click(function () {
+        var modalName = $(this).attr('href');
+        $(modalName).addClass('active');
+        $('.modal-mask').addClass('active');
+    });
+    $('.modal-mask, .modal__close').click(function () {
+        $('.modal-mask, .modal').removeClass('active');
+    });
+});
+jQuery(document).ready(function ($) {
     $('.prices-content-item').click(function () {
         $(this).toggleClass('active').siblings().removeClass('active');
     });
@@ -50,22 +60,16 @@ jQuery(document).ready(function ($) {
 });
 jQuery(document).ready(function ($) {
     $('.slider').slick({
-        accessibility: false,
-        autoplay: false,
-        autoplaySpeed: 3000,
+        autoplay: true,
+        autoplaySpeed: 4000,
         speed: 1000,
-        infinite: true,
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerPadding: 0,
         pauseOnHover: false,
-        initialSlide: 1
-        //prevArrow: '<span class="slick-prev slick-nav slick-nav--prev" aria-label="previous"></span>',
-        //nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>'
+        initialSlide: 0
     });
 });
-
 jQuery(document).ready(function ($) {
     $('.specialist-list').slick({
         accessibility: false,
@@ -110,5 +114,14 @@ jQuery(document).ready(function ($) {
     $('.top-menu__mobile').click(function () {
         $(this).toggleClass('active');
         $('.top-menu__list').toggleClass('active');
+    });
+
+    $('.top-menu__item > a').click(function () {
+        $(this).toggleClass('active').parent().find('.top-menu-inside').toggleClass('active');
+        $('.mask').addClass('active');
+    });
+
+    $('.mask').click(function () {
+        $('.mask, .top-menu-inside, .top-menu__item > a').removeClass('active');
     });
 });

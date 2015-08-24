@@ -33,7 +33,17 @@
       <div class="header__wrapper"><a href="#" title="" class="header__logo"></a>
         <nav class="top-menu">
           <div class="top-menu__mobile"></div>
-          <div class="top-menu__list"><a href="#" title="" class="top-menu__item">Главная</a><a href="#" title="" class="top-menu__item">О Famaly Clinic</a><a href="#" title="" class="top-menu__item">Направления</a><a href="#" title="" class="top-menu__item">Специалисты</a><a href="#" title="" class="top-menu__item">Полезная информация</a><a href="#" title="" class="top-menu__item">Цены</a><a href="#" title="" class="top-menu__item">Контакты</a></div>
+          <div class="top-menu__list">
+            <div class="top-menu__item"><a href="/" title="">Главная</a></div>
+            <div class="top-menu__item"><a href="/about.html" title="">О Family Clinic</a></div>
+            <div class="top-menu__item"><a href="#" title="">Направления</a>
+              <div class="top-menu-inside"><a href="#" title="" class="directions__item directions__item--general-medicine"> <span></span>Общая медицина </a><a href="#" title="" class="directions__item directions__item--childrens-department"> <span></span>Детское отделение </a><a href="#" title="" class="directions__item directions__item--aesthetic-medicine"> <span></span>эстетическая медицина</a><a href="#" title="" class="directions__item directions__item--diagnostics"> <span></span>диагностика</a><a href="#" title="" class="directions__item directions__item--prophylactic-examinations"> <span></span>профосмотры </a><a href="#" title="" class="directions__item directions__item--checkup-program"> <span></span>CHECK-UP ПРОГРАММЫ </a><a href="#" title="" class="directions__item directions__item--management-pregnancy"> <span></span>ведение беременности </a><a href="#" title="" class="directions__item directions__item--rehabilitation"> <span></span>реабилитация </a></div>
+            </div>
+            <div class="top-menu__item"><a href="/specialist.html" title="">Специалисты</a></div>
+            <div class="top-menu__item"><a href="#" title="">Полезная информация</a></div>
+            <div class="top-menu__item"><a href="/prices.html" title="">Цены</a></div>
+            <div class="top-menu__item"><a href="#" title="">Контакты</a></div>
+          </div>
         </nav>
         <div class="header__combine">
           <div class="header__call">Call-центр: 8 (7172) 26-48-56</div>
@@ -173,6 +183,31 @@
         </div><a href="#" title="" class="footer__created">Разработана в Astanacreative.kz</a>
       </div>
     </footer>
+    <div class="mask"></div>
+    <div id="appointment" class="modal">
+      <div class="modal__title">Записаться на прием</div>
+      <div class="modal__close"></div>
+      <form method="" action="" class="form">
+        <div class="form__wrapper">
+          <div class="form__column">
+            <label class="form__label">Ваше имя:</label>
+            <input type="text" value="" class="form__element">
+          </div>
+          <div class="form__column">
+            <label class="form__label">Ваш телефон:</label>
+            <input type="text" value="" class="form__element">
+          </div>
+          <div class="form__column">
+            <label class="form__label">Дата записи:</label>
+            <input type="date" value="" class="form__element">
+          </div>
+          <div class="form__row">
+            <input type="submit" value="ЗАПИСАТЬСЯ НА ПРИЕМ К ВРАЧУ" class="form__submit">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-mask"></div>
     <script src="http://yastatic.net/jquery/1.11.2/jquery.min.js"></script>
     <script src="static/js/main.min.js"></script>
   </main>
