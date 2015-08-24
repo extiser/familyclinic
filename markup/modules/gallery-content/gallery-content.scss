@@ -1,5 +1,7 @@
 .gallery-content {
 	&__wrapper {
+		position: relative;
+
 		max-width: 1200px;
 
 		@extend .wrapper;
