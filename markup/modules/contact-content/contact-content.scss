@@ -33,38 +33,22 @@
 }
 
 .contact-content-list-social {
-	&__container {
-		@include nl;
-	}
 	&__item {
 		position: relative;
 
 		padding-left: 33px;
 
 		@extend .paragraph;
+		text-decoration: none;
 		&:before {
 			top: -5px;
 			left: 0;
 
 			@include content;
+			@include bg($fb);
 		}
-		&--vk {
-			&:before {
-				@include content;
-				@include bg($vk);
-			}
-		}
-		&--tw {
-			&:before {
-				@include content;
-				@include bg($tw);
-			}
-		}
-		&--gp {
-			&:before {
-				@include content;
-				@include bg($gp);
-			}
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 }
