@@ -68,7 +68,7 @@
           <aside class="sidebar-left sidebar-left--float">
             <div class="specialist-content-item"><img src="static/images/content/specialist-1.jpg" alt="" class="specialist-content-item__img">
               <div class="specialist-content-item__name">Джолдасова Гульмира Тлеубердиевна</div>
-              <div class="specialist-content-item__position">Врач терапевт</div><a href="#" title="" class="specialist-content-item__btn">Записаться на прием</a>
+              <div class="specialist-content-item__position">Врач терапевт</div><a href="#appointment" title="" data-click="modal" class="specialist-content-item__btn">Записаться на прием</a>
             </div>
           </aside>
           <div class="single-page-content__float single-page-content__float--news">
@@ -106,6 +106,30 @@
       </div>
     </footer>
     <div class="mask"></div>
+    <div id="appointment" class="modal">
+      <div class="modal__title">Записаться на прием</div>
+      <div class="modal__close"></div>
+      <form method="" action="" class="form">
+        <div class="form__wrapper">
+          <div class="form__column">
+            <label class="form__label">Ваше имя:</label>
+            <input type="text" value="" class="form__element">
+          </div>
+          <div class="form__column">
+            <label class="form__label">Ваш телефон:</label>
+            <input type="text" value="" class="form__element">
+          </div>
+          <div class="form__column">
+            <label class="form__label">Дата записи:</label>
+            <input type="date" value="" class="form__element">
+          </div>
+          <div class="form__row">
+            <input type="submit" value="ЗАПИСАТЬСЯ НА ПРИЕМ К ВРАЧУ" class="form__submit">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-mask"></div>
     <script src="http://yastatic.net/jquery/1.11.2/jquery.min.js"></script>
     <script src="static/js/main.min.js"></script>
   </main>

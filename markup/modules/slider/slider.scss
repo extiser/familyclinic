@@ -32,55 +32,6 @@
 	line-height: 1;
 
 	@include blocks-justify;
-	&__row {
-		display: table;
-
-		margin: 0;
-		&--first {
-			font-family: "ReformaGroteskDemiC";
-			font-size: em(55px);
-		}
-		&--second {
-			font-size: em(36px);
-			span {
-				color: $green;
-			}
-		}
-		&--third {
-			font-size: em(26px);
-		}
-		&--fourth {
-			font-size: em(35px);
-		}
-		&--fifth {
-			font-size: em(45px);
-		}
-	}
-	@media screen and (max-width: 1440px) {
-		width: 250px;
-		margin-top: 70px;
-
-		@include blocks-justify;
-		&__row {
-			display: inline;
-			&--first {
-				font-family: "ReformaGroteskDemiC";
-				font-size: em(35px);
-			}
-			&--second {
-				font-size: em(23px);
-			}
-			&--third {
-				font-size: em(18px);
-			}
-			&--fourth {
-				font-size: em(23px);
-			}
-			&--fifth {
-				font-size: em(31px);
-			}
-		}
-	}
 }
 
 /* Slider */
