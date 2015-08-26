@@ -1,0 +1,47 @@
+.gallery-content {
+	&__wrapper {
+		position: relative;
+
+		max-width: 1200px;
+
+		@extend .wrapper;
+	}
+	h1 {
+		width: 100%;
+		margin: 0;
+
+		@extend .title-inside;
+	}
+	&__list {
+		width: 100%;
+
+		text-align: center;
+	}
+	&__item {
+		display: inline-block;
+
+		width: 300px;
+		margin: 15px;
+		padding-bottom: 15px;
+
+		vertical-align: top;
+		text-decoration: none;
+
+		background: #fff;
+		box-shadow: 0 0 5px #d3d3d3;
+		img {
+			width: 100%;
+
+			border-radius: 5px 5px 0 0;
+		}
+	}
+	&__description {
+		display: block;
+
+		padding-top: 10px;
+
+		color: $gray;
+
+		font-size: em(16px);
+	}
+}

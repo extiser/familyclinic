@@ -25,6 +25,16 @@
 			color: $green;
 			border-bottom: 1px solid $gray;
 		}
+		a {
+			text-decoration: none;
+
+			font-size: em(30px, 30px);
+
+			@extend .title;
+			&:hover {
+				color: $green;
+			}
+		}
 	}
 }
 

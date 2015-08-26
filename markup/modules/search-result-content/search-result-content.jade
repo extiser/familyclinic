@@ -1,0 +1,16 @@
+mixin search-result-content()
+	section.page-content
+		.page-content__wrapper
+			.single-page-content
+				h1 По запросу «беременность» найдено 89 результатов:
+				+breadcrumbs()
+
+				.search-result-content
+					- for (var i = 0; i < 5; i++) {
+					.search-result-content-item
+						.search-result-content-item__img
+							img(src="%=staticPrefix=%images/content/search-result.jpg" alt="")
+						.search-result-content-item__body
+							a(href="#" title="").search-result-content-item__link Лечение бесплодия
+							p.search-result-content-item__text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+					- }

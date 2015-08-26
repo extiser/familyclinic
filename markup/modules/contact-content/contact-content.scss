@@ -18,7 +18,18 @@
 	}
 }
 
+.contact-content-list-wrapper {
+	display: flex;
+
+	width: 50%;
+
+	align-content: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
 .contact-content-list-address {
+	height: auto;
 	&__container {
 		@include nl;
 	}
@@ -33,13 +44,12 @@
 }
 
 .contact-content-list-social {
-	&__container {
-		@include nl;
-	}
 	&__item {
 		position: relative;
 
 		padding-left: 33px;
+
+		text-decoration: none;
 
 		@extend .paragraph;
 		&:before {
@@ -47,23 +57,39 @@
 			left: 0;
 
 			@include content;
+			@include bg($fb);
 		}
-		&--vk {
-			&:before {
-				@include content;
-				@include bg($vk);
-			}
+		&:hover {
+			text-decoration: underline;
 		}
-		&--tw {
-			&:before {
-				@include content;
-				@include bg($tw);
-			}
-		}
-		&--gp {
-			&:before {
-				@include content;
-				@include bg($gp);
+	}
+}
+
+.contact-content-list-mode {
+	width: 100%;
+	margin-top: 40px;
+	&__title {
+		color: $green;
+
+		font-size: em(18px);
+	}
+	table {
+		width: 50%;
+		margin-top: 10px;
+		tr {
+			td {
+				padding: 5px 0;
+
+				text-align: right;
+
+				border-bottom: 1px solid #dedede;
+
+				font-size: em(14px);
+				&:first-child {
+					text-align: left;
+
+					font-weight: 700;
+				}
 			}
 		}
 	}

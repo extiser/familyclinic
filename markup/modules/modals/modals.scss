@@ -1,24 +1,28 @@
 .modal {
-	visibility: hidden;
-	opacity: 0;
-	transition: all .4s ease-in-out;
-	&.active {
-		top: 60px;
-		visibility: visible;
-		opacity: 1;
-	}
-	position: absolute;
+	position: fixed;
 	z-index: 99;
 	top: -999px;
 	right: 0;
 	left: 0;
+
+	visibility: hidden;
 
 	width: 450px;
 	margin: auto;
 	padding-top: 30px;
 	padding-bottom: 20px;
 
+	transition: all .4s ease-in-out;
+
+	opacity: 0;
 	background: #fff;
+	&.active {
+		top: 60px;
+
+		visibility: visible;
+
+		opacity: 1;
+	}
 	&__close {
 		position: absolute;
 		top: 10px;
@@ -52,16 +56,18 @@
 	top: 0;
 	left: 0;
 
+	visibility: hidden;
+
 	width: 100%;
 	height: 100%;
 
-	background: rgba(0, 0, 0, .4);
-
-	visibility: hidden;
-	opacity: 0;
 	transition: all .4s ease-in-out;
+
+	opacity: 0;
+	background: rgba(0, 0, 0, .4);
 	&.active {
 		visibility: visible;
+
 		opacity: 1;
 	}
 }

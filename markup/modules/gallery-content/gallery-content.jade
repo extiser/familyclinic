@@ -1,0 +1,13 @@
+mixin gallery-content()
+	section.gallery-content
+		.gallery-content__wrapper
+			h1 Галерея
+			+breadcrumbs()
+
+			.gallery-content__list
+				- for (var i = 0; i < 12; i++) {
+				a(href="%=staticPrefix=%images/content/gallery-content-big.jpg" rel="galery-1" title="Название изображения").swipebox.gallery-content__item
+					img(src="%=staticPrefix=%images/content/gallery-content-small.jpg")
+
+					span.gallery-content__description Описание фото
+				- }

@@ -1,0 +1,32 @@
+.search-result-content {
+	width: 100%;
+	padding-top: 20px;
+}
+
+.search-result-content-item {
+	display: flex;
+
+	align-items: flex-start;
+	justify-content: flex-start;
+	&__img {
+		width: 140px;
+		height: auto;
+		margin-right: 20px;
+		img {
+			width: 100%;
+
+			border-radius: 5px;
+		}
+	}
+	&__body {
+		width: 90%;
+	}
+	&__link {
+		color: $green;
+
+		font-size: em(18px);
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

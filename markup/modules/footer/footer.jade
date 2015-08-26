@@ -10,9 +10,10 @@ mixin footer(modiffer)
 				p Регистратура: 8 (7172) 25-48-55
 				p E-mail: info@familyclinic.kz
 
-			a(href="#" title="").footer__created Разработана в Astanacreative.kz
+			a(href="http://astanacreative.kz/" target="_blank" title="Astanacreative.kz").footer__created Разработана в Astanacreative.kz
 	.mask
 	+modals()
 	//- Main scripts. You can replace it, but I recommend you to leave it here
 	script(src='http://yastatic.net/jquery/1.11.2/jquery.min.js')
+	script(src='%=staticPrefix=%js/separate-js/jquery.swipebox.min.js')
 	script(src='%=staticPrefix=%js/main%=hash=%%=min=%.js')

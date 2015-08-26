@@ -34,6 +34,11 @@ jQuery(document).ready(function ($) {
     });
 });
 
+;(function ($) {
+    $('.swipebox').swipebox({
+        useSVG: false
+    });
+})(jQuery);
 jQuery(document).ready(function ($) {
     $('a[data-click="modal"]').click(function () {
         var modalName = $(this).attr('href');
