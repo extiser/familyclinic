@@ -88,10 +88,7 @@
 	ul,
 	ol,
 	strong {
-		@extend .paragraph;
-		strong {
-			font-size: em(14px, 14px);
-		}
+		font-size: 14px;
 	}
 }
 
