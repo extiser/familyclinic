@@ -1,0 +1,10 @@
+mixin useful-information-content()
+	section.contact-content
+		.contact-content__wrapper
+			h1 Полезная информация
+			+breadcrumbs()
+
+			.useful-information-content
+				- for (var i = 0; i < 10; i++) {
+				+item-block()
+				- }

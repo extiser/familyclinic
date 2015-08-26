@@ -1,0 +1,26 @@
+.p404-content {
+	&__wrapper {
+		max-width: 1200px;
+		padding-bottom: 60px;
+
+		text-align: center;
+
+		@extend .wrapper;
+	}
+	&__icon {
+		margin: 25px 0;
+	}
+	&__title {
+		text-transform: uppercase;
+
+		font-size: em(40px);
+	}
+	&__link {
+		color: $gray;
+
+		font-size: em(16px);
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
