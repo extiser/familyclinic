@@ -30,6 +30,11 @@
 		line-height: 41px;
 
 		@extend .green-btn;
+		@media screen and (max-width: 960px) {
+			display: block;
+
+			margin-bottom: 20px;
+		}
 	}
 }
 
@@ -39,6 +44,9 @@
 	max-width: 300px;
 	margin: 0 45px;
 	padding-top: 170px;
+	@media screen and (max-width: 960px) {
+		margin-bottom: 40px;
+	}
 	&__element {
 		display: flex;
 

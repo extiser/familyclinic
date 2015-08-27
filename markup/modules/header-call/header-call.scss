@@ -1,0 +1,70 @@
+.header-call {
+	order: 3;
+	&__mobile {
+		position: relative;
+
+		display: none;
+
+		width: 48px;
+		height: 50px;
+
+		border-left: 1px solid #c3c3c3;
+		box-shadow: inset 1px 0 #fff, -1px 0 #fff;
+		&:before {
+			top: 15px;
+			left: 15px;
+
+			@include bg($phone-mobile);
+			@include content();
+		}
+		&.active {
+			border-right-color: transparent;
+			background-color: $gray;
+			box-shadow: none;
+			&:before {
+				@include bg($close-mobile);
+			}
+		}
+		@media screen and (max-width: 960px) {
+			display: block;
+		}
+	}
+	&__list {
+		@media screen and (max-width: 960px) {
+			position: absolute;
+			z-index: 999;
+			top: 50px;
+			left: 0;
+			left: 0;
+
+			display: none;
+
+			width: 100%;
+			padding: 20px 0;
+		}
+		&.active {
+			display: block;
+
+			background-color: $gray;
+		}
+	}
+	&__item {
+		text-transform: uppercase;
+
+		color: $green;
+
+		font-size: em(14px);
+		font-weight: 700;
+		line-height: 1;
+		&:first-child {
+			padding-bottom: 10px;
+		}
+		@media screen and (max-width: 960px) {
+			padding-left: 20px;
+
+			color: #fff;
+
+			font-size: em(18px);
+		}
+	}
+}
