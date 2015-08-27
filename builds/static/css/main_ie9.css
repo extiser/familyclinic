@@ -402,13 +402,6 @@ html, body {
   margin: auto;
   position: relative; }
 
-.single-page-about__img {
-  margin-right: 40px; }
-.single-page-about__btn {
-  display: inline-block;
-  padding: 0 25px;
-  line-height: 41px; }
-
 .page-content__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -424,6 +417,13 @@ html, body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.single-page-about__img {
+  margin-right: 40px; }
+.single-page-about__btn {
+  display: inline-block;
+  padding: 0 25px;
+  line-height: 41px; }
 
 .appointment-content-info {
   padding-top: 15px;
@@ -1411,14 +1411,14 @@ html.swipebox-html.swipebox-touch {
   visibility: hidden;
   width: 450px;
   margin: auto;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 0;
   -webkit-transition: all .4s ease-in-out;
           transition: all .4s ease-in-out;
   opacity: 0;
   background: #fff; }
   .modal.active {
-    top: 90px;
+    top: 22%;
     visibility: visible;
     opacity: 1; }
   .modal__close {
@@ -1431,6 +1431,8 @@ html.swipebox-html.swipebox-touch {
     height: 18px;
     background-size: 526px, 381px;
     background-repeat: no-repeat; }
+  .modal__title {
+    font-size: 1.5em; }
   .modal .form {
     background: none; }
     .modal .form__column {
@@ -1442,6 +1444,8 @@ html.swipebox-html.swipebox-touch {
       width: 100%;
       border: 1px solid #34b44a;
       box-shadow: none; }
+    .modal .form__row {
+      margin-top: -15px; }
 
 .modal-mask {
   position: fixed;

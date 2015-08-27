@@ -9,15 +9,15 @@
 
 	width: 450px;
 	margin: auto;
-	padding-top: 30px;
-	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 0;
 
 	transition: all .4s ease-in-out;
 
 	opacity: 0;
 	background: #fff;
 	&.active {
-		top: 90px;
+		top: 22%;
 
 		visibility: visible;
 
@@ -31,6 +31,8 @@
 		@include bg($close-modal);
 	}
 	&__title {
+		font-size: em(24px);
+
 		@extend .title;
 	}
 	.form {
@@ -47,6 +49,9 @@
 
 			border: 1px solid $green;
 			box-shadow: none;
+		}
+		&__row {
+			margin-top: -15px;
 		}
 	}
 }
