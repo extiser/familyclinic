@@ -1,6 +1,10 @@
 .directions {
+	@media screen and (max-width: 960px) {
+		margin-top: 50px;
+	}
 	&__wrapper {
 		display: flex;
+
 		max-width: 1200px;
 		padding: 36px 10px 52px;
 
@@ -8,6 +12,9 @@
 		@extend .wrapper;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		@media screen and (max-width: 960px) {
+			justify-content: center;
+		}
 	}
 	&__title {
 		margin-bottom: 32px;
@@ -23,6 +30,14 @@
 		color: #6d6e71;
 
 		font-size: em(14px);
+		@media screen and (max-width: 960px) {
+			width: 40%;
+			margin: 15px;
+
+			text-align: center;
+
+			font-size: em(12px);
+		}
 		span {
 			display: block;
 

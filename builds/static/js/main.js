@@ -40,6 +40,16 @@ jQuery(document).ready(function ($) {
     });
 })(jQuery);
 jQuery(document).ready(function ($) {
+    $('.header-call__mobile').click(function () {
+        $(this).toggleClass('active');
+        $('.header-call__list, .mask').toggleClass('active');
+    });
+
+    $('.mask').click(function () {
+        $('.mask, .header-call__list, .header-call__mobile').removeClass('active');
+    });
+});
+jQuery(document).ready(function ($) {
     $('a[data-click="modal"]').click(function () {
         var modalName = $(this).attr('href');
         $(modalName).addClass('active');
@@ -54,15 +64,7 @@ jQuery(document).ready(function ($) {
         $(this).toggleClass('active').siblings().removeClass('active');
     });
 });
-jQuery(document).ready(function ($) {
-    $('.search__mobile').click(function () {
-        $(this).toggleClass('active');
-        $('.search__wrapper').toggleClass('active');
-        setTimeout(function () {
-            $('.search__field').focus();
-        }, 400);
-    });
-});
+
 jQuery(document).ready(function ($) {
     $('.slider').slick({
         autoplay: true,
@@ -88,7 +90,15 @@ jQuery(document).ready(function ($) {
         centerPadding: 0,
         pauseOnHover: false,
         prevArrow: '<span class="slick-prev slick-nav slick-nav--prev" aria-label="previous"></span>',
-        nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>'
+        nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>',
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: true,
+                centerMode: true,
+                slidesToShow: 1
+            }
+        }]
     });
 });
 
@@ -105,7 +115,15 @@ jQuery(document).ready(function ($) {
         centerPadding: 0,
         pauseOnHover: false,
         prevArrow: '<span class="slick-prev slick-nav slick-nav--prev" aria-label="previous"></span>',
-        nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>'
+        nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>',
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: true,
+                centerMode: true,
+                slidesToShow: 1
+            }
+        }]
     });
 
     $('.tabs-header__title').click(function () {
@@ -118,15 +136,15 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function ($) {
     $('.top-menu__mobile').click(function () {
         $(this).toggleClass('active');
-        $('.top-menu__list').toggleClass('active');
+        $('.top-menu__list, .mask').toggleClass('active');
+    });
+
+    $('.mask').click(function () {
+        $('.mask, .top-menu__list, .top-menu__mobile').removeClass('active');
     });
 
     $('.top-menu__item > a').click(function () {
         $(this).toggleClass('active').parent().find('.top-menu-inside').toggleClass('active');
         $('.mask').addClass('active');
-    });
-
-    $('.mask').click(function () {
-        $('.mask, .top-menu-inside, .top-menu__item > a').removeClass('active');
     });
 });
