@@ -1,0 +1,22 @@
+.reviews-content {
+	margin-top: 10px;
+}
+
+.reviews-content-item {
+	margin-bottom: 40px;
+	&__name {
+		color: $gray;
+
+		font-size: em(18px);
+		font-weight: 700;
+	}
+	&__date {
+		color: #868686;
+
+		font-size: em(13px);
+	}
+	&__content {
+		color: $gray;
+		border-top: 1px solid #d8d8d8;
+	}
+}

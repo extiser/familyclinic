@@ -340,13 +340,13 @@ blockquote {
   font-size: 1.5em;
   font-weight: 700; }
 
-.green-btn, .single-page-about__btn, .appointment-content-info__btn, .additional-service-list-item__btn, .single-page-content-form__link, .single-page-content-form-block__submit, .sidebar-right__item, .specialist-content-item__btn, .why__button {
+.green-btn, .single-page-about__btn, .additional-service-list-item__btn, .appointment-content-info__btn, .single-page-content-form__link, .single-page-content-form-block__submit, .sidebar-right__item, .specialist-content-item__btn, .why__button {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   background: #34b44a;
   font-size: 0.875em; }
-  .green-btn:hover, .single-page-about__btn:hover, .appointment-content-info__btn:hover, .additional-service-list-item__btn:hover, .single-page-content-form__link:hover, .single-page-content-form-block__submit:hover, .sidebar-right__item:hover, .specialist-content-item__btn:hover, .why__button:hover {
+  .green-btn:hover, .single-page-about__btn:hover, .additional-service-list-item__btn:hover, .appointment-content-info__btn:hover, .single-page-content-form__link:hover, .single-page-content-form-block__submit:hover, .sidebar-right__item:hover, .specialist-content-item__btn:hover, .why__button:hover {
     background: #23a339; }
 
 .paragraph, .single-page-content__date, .contact-content-list-address__item span, .contact-content-list-social__item {
@@ -424,18 +424,6 @@ html, body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-
-.appointment-content-info {
-  padding-top: 15px;
-  border-top: 2px solid #b2b2b2; }
-  .appointment-content-info__cost {
-    text-transform: uppercase;
-    color: #34b44a;
-    font-size: 1.875em; }
-  .appointment-content-info__btn {
-    float: right;
-    padding: 0 25px;
-    line-height: 41px; }
 
 .additional-service {
   overflow: hidden;
@@ -582,6 +570,18 @@ html, body {
       color: #34b44a; }
     .additional-service-list-item.slick-center .additional-service-list-item__inside {
       display: block; }
+
+.appointment-content-info {
+  padding-top: 15px;
+  border-top: 2px solid #b2b2b2; }
+  .appointment-content-info__cost {
+    text-transform: uppercase;
+    color: #34b44a;
+    font-size: 1.875em; }
+  .appointment-content-info__btn {
+    float: right;
+    padding: 0 25px;
+    line-height: 41px; }
 
 .appointments {
   min-height: 542px;
@@ -1482,6 +1482,8 @@ html.swipebox-html.swipebox-touch {
   border-radius: 5px;
   background: #fff;
   box-shadow: 0 0 7px #e0e8ef; }
+  .single-page-content-form-block--nofloat {
+    float: none; }
   .single-page-content-form-block__row {
     position: relative; }
     .single-page-content-form-block__row:before {
@@ -1640,6 +1642,22 @@ html.swipebox-html.swipebox-touch {
       font-size: 0.6087em; }
       .prices-content-item-inside table tr td:last-child {
         text-align: center; }
+
+.reviews-content {
+  margin-top: 10px; }
+
+.reviews-content-item {
+  margin-bottom: 40px; }
+  .reviews-content-item__name {
+    color: #6d6e71;
+    font-size: 1.125em;
+    font-weight: 700; }
+  .reviews-content-item__date {
+    color: #868686;
+    font-size: 0.8125em; }
+  .reviews-content-item__content {
+    color: #6d6e71;
+    border-top: 1px solid #d8d8d8; }
 
 .search {
   position: relative; }

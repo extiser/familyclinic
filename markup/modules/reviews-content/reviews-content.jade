@@ -1,0 +1,25 @@
+mixin reviews-content()
+	section.page-content
+		.page-content__wrapper
+			.single-page-content
+				h1 Отзывы
+
+				+breadcrumbs()
+
+				.single-page-content__float.single-page-content__float--news
+					.reviews-content
+						- for (var i = 0; i < 4; i++) {
+						.reviews-content-item
+							.reviews-content-item__name Имя Фамилия Отчество
+							.reviews-content-item__date Дата публикации: 28.08.2015
+							.reviews-content-item__content
+								p If you are searching for an editable version of a particular icon or button for your current web design project, then look no further. In this post we have 60 individual icons and buttons, all in PSD format, covering almost every possible web design style and function.
+								p In this post, we have came up with pretty useful resources that you can use for your designs or websites. This Ultimate Collection of Free Buttons in PSD Format is a compilation of high quality buttons that you may find useful and unique. Also, since the files are in PSD format, you may add a few of your personal touch to make more. Check out these cool buttons and download your best pick.
+						- }
+					.single-page-content-form
+						form(method="" action="").single-page-content-form-block.single-page-content-form-block--nofloat
+							.single-page-content-form-block__row.single-page-content-form-block__row--name
+								input(type="text" value="" placeholder="Ваше Ф.И.О.").single-page-content-form-block__element
+							textarea(placeholder="Ваш текст...").single-page-content-form-block__element.single-page-content-form-block__element--textarea
+							input(type="submit" value="Отправить заявку").single-page-content-form-block__submit
+				+sidebar-right('news')

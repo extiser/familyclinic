@@ -79,31 +79,6 @@ jQuery(document).ready(function ($) {
     });
 });
 jQuery(document).ready(function ($) {
-    $('.specialist-list').slick({
-        accessibility: false,
-        autoplay: false,
-        autoplaySpeed: 3000,
-        speed: 1000,
-        infinite: true,
-        arrows: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        centerPadding: 0,
-        pauseOnHover: false,
-        prevArrow: '<span class="slick-prev slick-nav slick-nav--prev" aria-label="previous"></span>',
-        nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>',
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                arrows: true,
-                centerMode: true,
-                slidesToShow: 1
-            }
-        }]
-    });
-});
-
-jQuery(document).ready(function ($) {
     $('.news').slick({
         accessibility: false,
         autoplay: false,
@@ -147,5 +122,29 @@ jQuery(document).ready(function ($) {
     $('.top-menu__item > a').click(function () {
         $(this).toggleClass('active').parent().find('.top-menu-inside').toggleClass('active');
         $('.mask').addClass('active');
+    });
+});
+jQuery(document).ready(function ($) {
+    $('.specialist-list').slick({
+        accessibility: false,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        speed: 1000,
+        infinite: true,
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        centerPadding: 0,
+        pauseOnHover: false,
+        prevArrow: '<span class="slick-prev slick-nav slick-nav--prev" aria-label="previous"></span>',
+        nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>',
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: true,
+                centerMode: true,
+                slidesToShow: 1
+            }
+        }]
     });
 });
