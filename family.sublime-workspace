@@ -4,16 +4,16 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-top"
+			],
+			[
 				"marign",
 				"margin"
 			],
 			[
 				"pad",
 				"padding-top"
-			],
-			[
-				"margin",
-				"margin"
 			],
 			[
 				"fon",
@@ -593,13 +593,16 @@
 	[
 		"/Users/extiser/git/familyclinic/markup",
 		"/Users/extiser/git/familyclinic/markup/modules",
-		"/Users/extiser/git/familyclinic/markup/modules/footer",
+		"/Users/extiser/git/familyclinic/markup/modules/modals",
+		"/Users/extiser/git/familyclinic/markup/modules/top-menu",
 		"/Users/extiser/git/familyclinic/markup/pages",
 		"/Users/extiser/git/familyclinic/markup/static",
 		"/Users/extiser/git/familyclinic/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/familyclinic/markup/modules/modals/modals.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/top-menu/top-menu.scss",
 		"/Users/extiser/git/familyclinic/markup/modules/footer/footer.scss",
 		"/Users/extiser/git/familyclinic/markup/modules/appointments/appointments.scss",
 		"/Users/extiser/git/familyclinic/markup/modules/tabs/tabs.js",
@@ -610,12 +613,10 @@
 		"/Users/extiser/git/familyclinic/markup/modules/specialist/specialist.js",
 		"/Users/extiser/git/familyclinic/markup/modules/directions/directions.scss",
 		"/Users/extiser/git/familyclinic/markup/modules/slider/slider.scss",
-		"/Users/extiser/git/familyclinic/markup/modules/top-menu/top-menu.scss",
 		"/Users/extiser/git/familyclinic/markup/modules/search/search.js",
 		"/Users/extiser/git/familyclinic/markup/modules/top-menu/top-menu.js",
 		"/Users/extiser/git/familyclinic/markup/modules/header-call/header-call.scss",
 		"/Users/extiser/git/familyclinic/markup/modules/header-call/header-call.js",
-		"/Users/extiser/git/familyclinic/markup/modules/modals/modals.scss",
 		"/Users/extiser/git/familyclinic/markup/modules/header/header.scss",
 		"/Users/extiser/git/familyclinic/markup/modules/include/include.jade",
 		"/Users/extiser/git/familyclinic/markup/modules/header/header.jade",

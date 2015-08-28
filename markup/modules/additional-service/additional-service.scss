@@ -20,6 +20,11 @@
 	}
 }
 
+.no-delete {
+	position: absolute;
+	opacity: 0;
+}
+
 .additional-service-list {
 	left: 0;
 	.slick-nav {

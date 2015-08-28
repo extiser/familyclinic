@@ -11,6 +11,7 @@ jQuery(document).ready(function ($) {
         centerPadding: 0,
         pauseOnHover: false,
         centerMode: true,
+        focusOnSelect: true,
         prevArrow: '<span class="slick-prev slick-nav slick-nav--prev" aria-label="previous"></span>',
         nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>'
     });

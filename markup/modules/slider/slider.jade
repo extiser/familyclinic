@@ -1,6 +1,6 @@
 mixin slider()
 	section.slider
 		- for (var i = 1; i < 7; i++) {
-		.slider__item
+		a(href="#" title="").slider__item
 			img(src="%=staticPrefix=%images/content/slide-#{i}.jpg" alt="")
 		- }
