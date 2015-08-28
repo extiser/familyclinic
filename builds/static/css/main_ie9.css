@@ -340,13 +340,13 @@ blockquote {
   font-size: 1.5em;
   font-weight: 700; }
 
-.green-btn, .single-page-about__btn, .additional-service-list-item__btn, .appointment-content-info__btn, .single-page-content-form__link, .single-page-content-form-block__submit, .sidebar-right__item, .specialist-content-item__btn, .why__button {
+.green-btn, .single-page-about__btn, .appointment-content-info__btn, .additional-service-list-item__btn, .single-page-content-form__link, .single-page-content-form-block__submit, .sidebar-right__item, .specialist-content-item__btn, .why__button {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   background: #34b44a;
   font-size: 0.875em; }
-  .green-btn:hover, .single-page-about__btn:hover, .additional-service-list-item__btn:hover, .appointment-content-info__btn:hover, .single-page-content-form__link:hover, .single-page-content-form-block__submit:hover, .sidebar-right__item:hover, .specialist-content-item__btn:hover, .why__button:hover {
+  .green-btn:hover, .single-page-about__btn:hover, .appointment-content-info__btn:hover, .additional-service-list-item__btn:hover, .single-page-content-form__link:hover, .single-page-content-form-block__submit:hover, .sidebar-right__item:hover, .specialist-content-item__btn:hover, .why__button:hover {
     background: #23a339; }
 
 .paragraph, .single-page-content__date, .contact-content-list-address__item span, .contact-content-list-social__item {
@@ -424,6 +424,18 @@ html, body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.appointment-content-info {
+  padding-top: 15px;
+  border-top: 2px solid #b2b2b2; }
+  .appointment-content-info__cost {
+    text-transform: uppercase;
+    color: #34b44a;
+    font-size: 1.875em; }
+  .appointment-content-info__btn {
+    float: right;
+    padding: 0 25px;
+    line-height: 41px; }
 
 .additional-service {
   overflow: hidden;
@@ -505,9 +517,7 @@ html, body {
   .additional-service-list-item__inside {
     display: none; }
   .additional-service-list-item__img {
-    height: 100%;
-    -webkit-filter: grayscale(1) blur(4px) brightness(85%);
-            filter: grayscale(1) blur(4px) brightness(85%); }
+    height: 100%; }
   .additional-service-list-item__title {
     text-align: right;
     text-transform: uppercase;
@@ -572,18 +582,6 @@ html, body {
       color: #34b44a; }
     .additional-service-list-item.slick-center .additional-service-list-item__inside {
       display: block; }
-
-.appointment-content-info {
-  padding-top: 15px;
-  border-top: 2px solid #b2b2b2; }
-  .appointment-content-info__cost {
-    text-transform: uppercase;
-    color: #34b44a;
-    font-size: 1.875em; }
-  .appointment-content-info__btn {
-    float: right;
-    padding: 0 25px;
-    line-height: 41px; }
 
 .appointments {
   min-height: 542px;
@@ -1543,6 +1541,49 @@ html.swipebox-html.swipebox-touch {
     .p404-content__link:hover {
       text-decoration: none; }
 
+@media screen and (max-width: 960px) {
+  .pagination {
+    margin: auto;
+    text-align: center; } }
+.pagination__item {
+  margin-right: -1px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  color: #2d3577;
+  border: 1px solid #e8e8e8;
+  font-size: 0.875em;
+  line-height: 1.5em; }
+  .pagination__item:hover, .pagination__item.active {
+    color: #000;
+    background-color: #f8e1e7; }
+  .pagination__item--prev, .pagination__item--next {
+    position: relative;
+    width: 17px;
+    height: 14px;
+    padding: 5px 17px; }
+    .pagination__item--prev:before, .pagination__item--next:before {
+      top: 7px;
+      position: absolute;
+      display: block;
+      content: ""; }
+  .pagination__item--prev:before {
+    left: 8px;
+    background-image: url(../images/png-sprite/96dpi/sprite.png);
+    background-position: -494px -202px;
+    width: 17px;
+    height: 14px;
+    background-size: 526px, 381px;
+    background-repeat: no-repeat; }
+  .pagination__item--next:before {
+    left: 10px;
+    background-image: url(../images/png-sprite/96dpi/sprite.png);
+    background-position: -496px -248px;
+    width: 17px;
+    height: 14px;
+    background-size: 526px, 381px;
+    background-repeat: no-repeat; }
+
 .prices-content__wrapper {
   position: relative;
   max-width: 1200px; }
@@ -1599,49 +1640,6 @@ html.swipebox-html.swipebox-touch {
       font-size: 0.6087em; }
       .prices-content-item-inside table tr td:last-child {
         text-align: center; }
-
-@media screen and (max-width: 960px) {
-  .pagination {
-    margin: auto;
-    text-align: center; } }
-.pagination__item {
-  margin-right: -1px;
-  padding: 5px 10px;
-  text-decoration: none;
-  color: #333;
-  color: #2d3577;
-  border: 1px solid #e8e8e8;
-  font-size: 0.875em;
-  line-height: 1.5em; }
-  .pagination__item:hover, .pagination__item.active {
-    color: #000;
-    background-color: #f8e1e7; }
-  .pagination__item--prev, .pagination__item--next {
-    position: relative;
-    width: 17px;
-    height: 14px;
-    padding: 5px 17px; }
-    .pagination__item--prev:before, .pagination__item--next:before {
-      top: 7px;
-      position: absolute;
-      display: block;
-      content: ""; }
-  .pagination__item--prev:before {
-    left: 8px;
-    background-image: url(../images/png-sprite/96dpi/sprite.png);
-    background-position: -494px -202px;
-    width: 17px;
-    height: 14px;
-    background-size: 526px, 381px;
-    background-repeat: no-repeat; }
-  .pagination__item--next:before {
-    left: 10px;
-    background-image: url(../images/png-sprite/96dpi/sprite.png);
-    background-position: -496px -248px;
-    width: 17px;
-    height: 14px;
-    background-size: 526px, 381px;
-    background-repeat: no-repeat; }
 
 .search {
   position: relative; }
