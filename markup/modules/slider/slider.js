@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        pauseOnHover: false,
+        pauseOnHover: true,
         initialSlide: 0
     });
 });

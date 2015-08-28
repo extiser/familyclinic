@@ -25,6 +25,9 @@
 	border-radius: 5px;
 	background: #fff;
 	box-shadow: 0 0 7px #e0e8ef;
+	&--nofloat {
+		float: none;
+	}
 	&__row {
 		position: relative;
 		&:before {
