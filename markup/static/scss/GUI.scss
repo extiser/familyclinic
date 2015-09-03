@@ -70,14 +70,26 @@
 		float: left;
 
 		width: 960px;
+		@media screen and (max-width: 960px) {
+			float: none;
+
+			width: 100%;
+		}
 		&--news {
 			width: 900px;
+			@media screen and (max-width: 960px) {
+				width: 100%;
+			}
 		}
 	}
 	h1 {
 		margin: 0;
 
 		@extend .title-inside;
+
+		@media screen and (max-width: 960px) {
+			text-align: center;
+		}
 	}
 	h2 {
 		color: $gray;
@@ -90,14 +102,28 @@
 	strong {
 		font-size: 14px;
 	}
+	img {
+		@media screen and (max-width: 960px) {
+			width: 100%;
+			height: auto;
+		}
+	}
 }
 
 .sidebar-left {
 	width: 255px;
 	margin-right: 41px;
+	@media screen and (max-width: 960px) {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
 	&--float {
 		float: left;
 
 		margin-right: 25px;
+		@media screen and (max-width: 960px) {
+			float: none;
+		}
 	}
 }

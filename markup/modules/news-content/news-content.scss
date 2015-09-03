@@ -25,6 +25,13 @@
 	border-radius: 5px;
 	background: #fff;
 	box-shadow: 0 0 7px #e0e8ef;
+	@media screen and (max-width: 960px) {
+		float: none;
+
+		width: 100%;
+		margin: 20px 0;
+		padding-bottom: 55px;
+	}
 	&--nofloat {
 		float: none;
 	}

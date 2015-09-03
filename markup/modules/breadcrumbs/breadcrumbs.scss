@@ -3,9 +3,7 @@
 	top: 5px;
 	right: 0;
 	@media screen and (max-width: 960px) {
-		margin-bottom: 10px;
-
-		text-align: center;
+		display: none;
 	}
 	&__item {
 		position: relative;

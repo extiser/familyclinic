@@ -340,13 +340,13 @@ blockquote {
   font-size: 1.5em;
   font-weight: 700; }
 
-.green-btn, .single-page-about__btn, .appointment-content-info__btn, .additional-service-list-item__btn, .single-page-content-form__link, .single-page-content-form-block__submit, .sidebar-right__item, .specialist-content-item__btn, .why__button {
+.green-btn, .single-page-about__btn, .additional-service-list-item__btn, .appointment-content-info__btn, .single-page-content-form__link, .single-page-content-form-block__submit, .sidebar-right__item, .specialist-content-item__btn, .why__button {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   background: #34b44a;
   font-size: 0.875em; }
-  .green-btn:hover, .single-page-about__btn:hover, .appointment-content-info__btn:hover, .additional-service-list-item__btn:hover, .single-page-content-form__link:hover, .single-page-content-form-block__submit:hover, .sidebar-right__item:hover, .specialist-content-item__btn:hover, .why__button:hover {
+  .green-btn:hover, .single-page-about__btn:hover, .additional-service-list-item__btn:hover, .appointment-content-info__btn:hover, .single-page-content-form__link:hover, .single-page-content-form-block__submit:hover, .sidebar-right__item:hover, .specialist-content-item__btn:hover, .why__button:hover {
     background: #23a339; }
 
 .paragraph, .single-page-content__date, .contact-content-list-address__item span, .contact-content-list-social__item {
@@ -371,36 +371,68 @@ blockquote {
   .single-page-content__float {
     float: left;
     width: 960px; }
+    @media screen and (max-width: 960px) {
+      .single-page-content__float {
+        float: none;
+        width: 100%; } }
     .single-page-content__float--news {
       width: 900px; }
+      @media screen and (max-width: 960px) {
+        .single-page-content__float--news {
+          width: 100%; } }
   .single-page-content h1 {
     margin: 0; }
+    @media screen and (max-width: 960px) {
+      .single-page-content h1 {
+        text-align: center; } }
   .single-page-content h2 {
     color: #6d6e71;
     font-size: 1.125em; }
   .single-page-content p, .single-page-content ul, .single-page-content ol, .single-page-content strong {
     font-size: 14px; }
+  @media screen and (max-width: 960px) {
+    .single-page-content img {
+      width: 100%;
+      height: auto; } }
 
 .sidebar-left {
   width: 255px;
   margin-right: 41px; }
+  @media screen and (max-width: 960px) {
+    .sidebar-left {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 15px; } }
   .sidebar-left--float {
     float: left;
     margin-right: 25px; }
+    @media screen and (max-width: 960px) {
+      .sidebar-left--float {
+        float: none; } }
 
 html, body {
   font-family: "Calibri"; }
 
 .wrapper, .page-content__wrapper, .additional-service__wrapper, .appointments__wrapper, .contact-content__wrapper, .directions__wrapper, .footer__wrapper, .gallery-content__wrapper, .header__wrapper, .p404-content__wrapper, .prices-content__wrapper, .slider, .specialist__wrapper, .specialist-content__wrapper, .tabs__wrapper, .tour-3d, .why__wrapper {
+  box-sizing: border-box;
   width: 100%;
-  margin: auto;
-  box-sizing: border-box; }
+  margin: auto; }
+  @media screen and (max-width: 960px) {
+    .wrapper, .page-content__wrapper, .additional-service__wrapper, .appointments__wrapper, .contact-content__wrapper, .directions__wrapper, .footer__wrapper, .gallery-content__wrapper, .header__wrapper, .p404-content__wrapper, .prices-content__wrapper, .slider, .specialist__wrapper, .specialist-content__wrapper, .tabs__wrapper, .tour-3d, .why__wrapper {
+      padding: 0 15px; } }
 
 .main {
+  position: relative;
   width: 100%;
   max-width: 1920px;
-  margin: auto;
-  position: relative; }
+  margin: auto; }
+
+.single-page-about__img {
+  margin-right: 40px; }
+.single-page-about__btn {
+  display: inline-block;
+  padding: 0 25px;
+  line-height: 41px; }
 
 .page-content__wrapper {
   display: -webkit-box;
@@ -417,25 +449,9 @@ html, body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-
-.single-page-about__img {
-  margin-right: 40px; }
-.single-page-about__btn {
-  display: inline-block;
-  padding: 0 25px;
-  line-height: 41px; }
-
-.appointment-content-info {
-  padding-top: 15px;
-  border-top: 2px solid #b2b2b2; }
-  .appointment-content-info__cost {
-    text-transform: uppercase;
-    color: #34b44a;
-    font-size: 1.875em; }
-  .appointment-content-info__btn {
-    float: right;
-    padding: 0 25px;
-    line-height: 41px; }
+  @media screen and (max-width: 960px) {
+    .page-content__wrapper {
+      display: block; } }
 
 .additional-service {
   overflow: hidden;
@@ -583,6 +599,18 @@ html, body {
     .additional-service-list-item.slick-center .additional-service-list-item__inside {
       display: block; }
 
+.appointment-content-info {
+  padding-top: 15px;
+  border-top: 2px solid #b2b2b2; }
+  .appointment-content-info__cost {
+    text-transform: uppercase;
+    color: #34b44a;
+    font-size: 1.875em; }
+  .appointment-content-info__btn {
+    float: right;
+    padding: 0 25px;
+    line-height: 41px; }
+
 .appointments {
   min-height: 542px;
   background: url(../images/general/appointments.jpg) no-repeat center center; }
@@ -659,8 +687,7 @@ html, body {
   right: 0; }
   @media screen and (max-width: 960px) {
     .breadcrumbs {
-      margin-bottom: 10px;
-      text-align: center; } }
+      display: none; } }
   .breadcrumbs__item {
     position: relative;
     padding-left: 20px;
@@ -698,6 +725,9 @@ html, body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media screen and (max-width: 960px) {
+    .contact-content__wrapper {
+      display: block; } }
 .contact-content h1 {
   margin: 0 0 25px 0; }
 
@@ -717,6 +747,10 @@ html, body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media screen and (max-width: 960px) {
+    .contact-content-list-wrapper {
+      display: block;
+      width: 100%; } }
 
 .contact-content-list-address {
   height: auto; }
@@ -729,6 +763,9 @@ html, body {
   .contact-content-list-address__item strong {
     color: #34b44a; }
 
+@media screen and (max-width: 960px) {
+  .contact-content-list-social {
+    margin-top: 15px; } }
 .contact-content-list-social__item {
   position: relative;
   padding-left: 33px;
@@ -751,12 +788,18 @@ html, body {
 .contact-content-list-mode {
   width: 100%;
   margin-top: 40px; }
+  @media screen and (max-width: 960px) {
+    .contact-content-list-mode {
+      margin-top: 15px; } }
   .contact-content-list-mode__title {
     color: #34b44a;
     font-size: 1.125em; }
   .contact-content-list-mode table {
     width: 50%;
     margin-top: 10px; }
+    @media screen and (max-width: 960px) {
+      .contact-content-list-mode table {
+        width: 100%; } }
     .contact-content-list-mode table tr td {
       padding: 5px 0;
       text-align: right;
@@ -768,6 +811,11 @@ html, body {
 
 .contact-content-list-map {
   border: 1px solid #34b44a; }
+  @media screen and (max-width: 960px) {
+    .contact-content-list-map {
+      overflow: hidden;
+      width: 100%;
+      margin-top: 15px; } }
 
 @media screen and (max-width: 960px) {
   .directions {
@@ -1482,6 +1530,12 @@ html.swipebox-html.swipebox-touch {
   border-radius: 5px;
   background: #fff;
   box-shadow: 0 0 7px #e0e8ef; }
+  @media screen and (max-width: 960px) {
+    .single-page-content-form-block {
+      float: none;
+      width: 100%;
+      margin: 20px 0;
+      padding-bottom: 55px; } }
   .single-page-content-form-block--nofloat {
     float: none; }
   .single-page-content-form-block__row {
@@ -1616,6 +1670,9 @@ html.swipebox-html.swipebox-touch {
     height: 11px;
     background-size: 526px, 381px;
     background-repeat: no-repeat; }
+    @media screen and (max-width: 960px) {
+      .prices-content-item:after {
+        display: none; } }
   .prices-content-item.active {
     color: #6d6e71;
     background: #fff; }
@@ -1626,6 +1683,9 @@ html.swipebox-html.swipebox-touch {
       height: 11px;
       background-size: 526px, 381px;
       background-repeat: no-repeat; }
+      @media screen and (max-width: 960px) {
+        .prices-content-item.active:after {
+          display: none; } }
     .prices-content-item.active .prices-content-item-inside {
       display: block; }
 
@@ -1715,25 +1775,6 @@ html.swipebox-html.swipebox-touch {
     font-size: 1.125em; }
     .search-result-content-item__link:hover {
       text-decoration: none; }
-
-.sidebar-right {
-  float: right;
-  width: 195px; }
-  .sidebar-right--news {
-    width: 230px; }
-  .sidebar-right__title {
-    margin-top: 10px;
-    text-transform: uppercase;
-    color: #34b44a;
-    font-size: 1.5em;
-    font-weight: 700; }
-  .sidebar-right__item {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-    text-align: center; }
-  .sidebar-right__actions .item-block {
-    margin-bottom: 15px; }
 
 .slider {
   position: absolute;
@@ -1830,6 +1871,29 @@ html.swipebox-html.swipebox-touch {
 .slick-arrow.slick-hidden {
   display: none; }
 
+.sidebar-right {
+  float: right;
+  width: 195px; }
+  @media screen and (max-width: 960px) {
+    .sidebar-right {
+      float: none;
+      margin: 100px auto; } }
+  .sidebar-right--news {
+    width: 230px; }
+  .sidebar-right__title {
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #34b44a;
+    font-size: 1.5em;
+    font-weight: 700; }
+  .sidebar-right__item {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center; }
+  .sidebar-right__actions .item-block {
+    margin-bottom: 15px; }
+
 .specialist {
   position: relative;
   min-height: 522px;
@@ -1925,6 +1989,9 @@ html.swipebox-html.swipebox-touch {
   margin-bottom: 20px;
   text-align: center;
   text-decoration: none; }
+  @media screen and (max-width: 960px) {
+    .specialist-content-item {
+      margin: 20px auto; } }
   .specialist-content-item__img {
     display: block;
     margin: auto;
@@ -2201,6 +2268,9 @@ html.swipebox-html.swipebox-touch {
           justify-content: space-between; }
   .useful-information-content .item-block {
     margin-bottom: 20px; }
+    @media screen and (max-width: 960px) {
+      .useful-information-content .item-block {
+        margin: 0 auto 20px; } }
 
 .why__wrapper {
   display: -webkit-box;

@@ -2,6 +2,11 @@
 	float: right;
 
 	width: 195px;
+	@media screen and (max-width: 960px) {
+		float: none;
+
+		margin: 100px auto;
+	}
 	&--news {
 		width: 230px;
 	}

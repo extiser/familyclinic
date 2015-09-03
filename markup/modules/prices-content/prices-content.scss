@@ -36,12 +36,18 @@
 
 		@include content;
 		@include bg($spoiler-closed);
+		@media screen and (max-width: 960px) {
+			display: none;
+		}
 	}
 	&.active {
 		color: $gray;
 		background: #fff;
 		&:after {
 			@include bg($spoiler-opened);
+			@media screen and (max-width: 960px) {
+				display: none;
+			}
 		}
 		.prices-content-item-inside {
 			display: block;
