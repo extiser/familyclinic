@@ -30,7 +30,16 @@ jQuery(document).ready(function ($) {
         pauseOnHover: false,
         centerMode: true,
         prevArrow: '<span class="slick-prev slick-nav slick-nav--prev" aria-label="previous"></span>',
-        nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>'
+        nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>',
+        responsive: [{
+            breakpoint: 960,
+            settings: {
+                arrows: true,
+                slidesToShow: 1,
+                centerMode: false,
+                draggable: true
+            }
+        }]
     });
 });
 

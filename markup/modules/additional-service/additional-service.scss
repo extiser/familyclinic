@@ -14,14 +14,14 @@
 
 		@extend .title;
 	}
-
 	@media screen and (max-width: 960px) {
-		display: none;
+		height: 700px;
 	}
 }
 
 .no-delete {
 	position: absolute;
+
 	opacity: 0;
 }
 
@@ -34,6 +34,9 @@
 
 		width: 30%;
 		height: 100%;
+		@media screen and (max-width: 960px) {
+			display: none !important;
+		}
 		&:before {
 			top: 0;
 			right: 0;
@@ -74,6 +77,12 @@
 
 		width: 1920px;
 	}
+	@media screen and (max-width: 960px) {
+		position: relative;
+		left: 0;
+
+		width: 100%;
+	}
 }
 
 .additional-service-list-item {
@@ -85,6 +94,23 @@
 
 	border-right: 3px solid transparent;
 	border-left: 3px solid transparent;
+	@media screen and (max-width: 960px) {
+		height: 550px !important;
+
+		border: 0;
+	}
+	&:before {
+		@media screen and (max-width: 960px) {
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			background-color: rgba(0,0,0,.7);
+
+			@include content;
+		}
+	}
 	&__content {
 		position: absolute;
 		z-index: 99;
@@ -95,10 +121,12 @@
 	}
 	&__inside {
 		display: none;
+		@media screen and (max-width: 960px) {
+			display: block;
+		}
 	}
 	&__img {
 		height: 100%;
-
 		//filter: grayscale(1) blur(4px) brightness(85%);
 	}
 	&__title {
@@ -106,9 +134,14 @@
 		text-transform: uppercase;
 
 		color: #fff;
+		text-shadow: 2px 2px 0 #838383;
 
 		font-family: "ReformaGroteskDemiC";
 		font-size: em(39px);
+		@media screen and (max-width: 960px) {
+			// font-size: em(21px);
+			text-align: left !important;
+		}
 	}
 	&__text {
 		color: #fff;
