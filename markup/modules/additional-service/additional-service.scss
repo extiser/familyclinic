@@ -15,7 +15,7 @@
 		@extend .title;
 	}
 	@media screen and (max-width: 960px) {
-		height: 700px;
+		height: 900px;
 	}
 }
 
@@ -95,7 +95,7 @@
 	border-right: 3px solid transparent;
 	border-left: 3px solid transparent;
 	@media screen and (max-width: 960px) {
-		height: 550px !important;
+		height: 950px !important;
 
 		border: 0;
 	}
