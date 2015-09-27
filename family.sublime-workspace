@@ -593,13 +593,13 @@
 	[
 		"/Users/extiser/git/familyclinic/markup",
 		"/Users/extiser/git/familyclinic/markup/modules",
-		"/Users/extiser/git/familyclinic/markup/modules/gallery-content",
+		"/Users/extiser/git/familyclinic/markup/modules/additional-service",
 		"/Users/extiser/git/familyclinic/markup/pages"
 	],
 	"file_history":
 	[
-		"/Users/extiser/git/familyclinic/markup/modules/additional-service/additional-service.js",
 		"/Users/extiser/git/familyclinic/markup/modules/additional-service/additional-service.scss",
+		"/Users/extiser/git/familyclinic/markup/modules/additional-service/additional-service.js",
 		"/Users/extiser/git/familyclinic/markup/modules/specialist/specialist.scss",
 		"/Users/extiser/git/familyclinic/markup/modules/slider/slider.js",
 		"/Users/extiser/git/familyclinic/markup/modules/slider/slider.jade",
